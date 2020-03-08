@@ -17,6 +17,11 @@
 `Helper.init(String);`
 
 
+**获取API版本**
+
+`Helper.getApiVersion();`
+
+
 
 ## 游戏API
 
