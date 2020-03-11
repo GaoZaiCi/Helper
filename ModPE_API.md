@@ -1,30 +1,22 @@
-# ModPE API
-
+## 基本API
 **获取设备标识**
-
-`Helper.getUserUUID();`
-
-
+`String Helper.getUserUUID();`
 
 **获取手机IMEI**
-
-`Helper.getIMEI();`
-
-
+`String Helper.getIMEI();`
 
 **初始化插件ID**
+`boolean Helper.init(String);`
 
-`Helper.init(String);`
-
-
-**获取API版本**
-
-`Helper.getApiVersion();`
-
-
+**加载指定路径JS**
+`boolean Helper.loadJS(String);`
 
 ## 游戏API
-
 **设置操作员状态**
+`void Helper.PlayerSetOperator(boolean);`
 
-`Helper.PlayerSetOperator(boolean);`
+**攻击实体**
+`boolean Helper.PlayerAttack(long);`
+
+**获取全部玩家**
+`long[] Helper.LevelGetAllPlayer();`
