@@ -1,22 +1,28 @@
 ## 基本API
 **获取设备标识**
-`String Helper.getUserUUID();`
+`Helper.getUserUUID();`
 
 **获取手机IMEI**
-`String Helper.getIMEI();`
+`Helper.getIMEI();`
 
 **初始化插件ID**
-`boolean Helper.init(String);`
+`Helper.init(String);`
 
 **加载指定路径JS**
-`boolean Helper.loadJS(String);`
+`Helper.loadJS(String);`
+
+**获取api版本**
+`Helper.getApiVersion();`
 
 ## 游戏API
 **设置操作员状态**
-`void Helper.PlayerSetOperator(boolean);`
+`Helper.PlayerSetOperator(String,boolean);`
 
-**攻击实体**
-`boolean Helper.PlayerAttack(long);`
+**攻击指定实体**
+`Helper.PlayerAttack(String,long);`
 
 **获取全部玩家**
-`long[] Helper.LevelGetAllPlayer();`
+`Helper.LevelGetAllPlayer();`
+
+**设置物品是否可放在副手**
+`Helper.ItemSetAllowOffhand(int,boolean
