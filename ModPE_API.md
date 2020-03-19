@@ -25,4 +25,4 @@
 `Helper.LevelGetAllPlayer();`
 
 **设置物品是否可放在副手**
-`Helper.ItemSetAllowOffhand(int,boolean
+`Helper.ItemSetAllowOffhand(int,boolean);`
