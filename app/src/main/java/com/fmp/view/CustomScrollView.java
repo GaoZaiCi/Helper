@@ -69,11 +69,8 @@ public class CustomScrollView extends ScrollView {
                 }
             } else {
                 View contentView = getChildAt(0);
-<<<<<<< HEAD
                 Log.e("CustomScrollView", "getMeasuredHeight:" + contentView.getMeasuredHeight() + " getScrollY+getHeight:" + (getScrollY() + getHeight()));
-=======
                 Log.e("CustomScrollView", "getMeasuredHeight:" + contentView.getMeasuredHeight()+" getScrollY+getHeight:"+(getScrollY() + getHeight()));
->>>>>>> 780e639b3e9978dc47e92c90e33d801c0dcb9b92
                 if (contentView != null && contentView.getMeasuredHeight() == (getScrollY() + getHeight())) {
                     //滚动到底部，ScrollView存在回弹效果效应
                     //优化，只过滤第一次
