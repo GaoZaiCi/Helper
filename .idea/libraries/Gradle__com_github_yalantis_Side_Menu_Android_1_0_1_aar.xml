@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.yalantis:Side-Menu.Android:1.0.1@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9fb764d913d5fc1bde9a46cd7ce35e8/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f9fb764d913d5fc1bde9a46cd7ce35e8/jetified-Side-Menu.Android-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a805ef0a62ad923c29f487a227a545c/jetified-Side-Menu.Android-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a805ef0a62ad923c29f487a227a545c/jetified-Side-Menu.Android-1.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2a805ef0a62ad923c29f487a227a545c/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/924746cee01d16d2a6e53512437342b0/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/924746cee01d16d2a6e53512437342b0/jetified-Side-Menu.Android-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/924746cee01d16d2a6e53512437342b0/jetified-Side-Menu.Android-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0245b51d47799c09477f8cd5d28f8a7/jetified-Side-Menu.Android-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0245b51d47799c09477f8cd5d28f8a7/jetified-Side-Menu.Android-1.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0245b51d47799c09477f8cd5d28f8a7/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c53bff4e8addf3b092a0ef864a8f8ff/jetified-Side-Menu.Android-1.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c53bff4e8addf3b092a0ef864a8f8ff/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/1c53bff4e8addf3b092a0ef864a8f8ff/jetified-Side-Menu.Android-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bd5120762448f1effd66c84ff1069db/jetified-Side-Menu.Android-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bd5120762448f1effd66c84ff1069db/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/2bd5120762448f1effd66c84ff1069db/jetified-Side-Menu.Android-1.0.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da02a0f25e16c6e52d555ed824f2c747/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da02a0f25e16c6e52d555ed824f2c747/jetified-Side-Menu.Android-1.0.1/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/da02a0f25e16c6e52d555ed824f2c747/jetified-Side-Menu.Android-1.0.1/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/33fe9c78257045f58c9005e82a468ee9/jetified-Side-Menu.Android-1.0.1/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/33fe9c78257045f58c9005e82a468ee9/jetified-Side-Menu.Android-1.0.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/33fe9c78257045f58c9005e82a468ee9/jetified-Side-Menu.Android-1.0.1/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yalantis/Side-Menu.Android/1.0.1/6b7e995e9bda27d7c3a5db6f71cc0afa713fa433/Side-Menu.Android-1.0.1-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.yalantis/Side-Menu.Android/1.0.1/10410d26f63aba11c3e2e46c3218d63abfe82d55/Side-Menu.Android-1.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

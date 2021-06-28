@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="Gradle: pl.droidsonroids.gif:android-gif-drawable:1.2.18@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4adcab81dee87a707071529ff98f07fa/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4adcab81dee87a707071529ff98f07fa/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8e59220d46dc825fc862c8ced088a739/jetified-android-gif-drawable-1.2.18/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8e59220d46dc825fc862c8ced088a739/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8e59220d46dc825fc862c8ced088a739/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45774d868244c7758511973ac250dc43/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45774d868244c7758511973ac250dc43/jetified-android-gif-drawable-1.2.18/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/45774d868244c7758511973ac250dc43/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc3d5b813ac3abe3d82b5a6d299ae9d1/jetified-android-gif-drawable-1.2.18/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc3d5b813ac3abe3d82b5a6d299ae9d1/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/bc3d5b813ac3abe3d82b5a6d299ae9d1/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31f64bac63d8abcd6b8bf50f2582fa07/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31f64bac63d8abcd6b8bf50f2582fa07/jetified-android-gif-drawable-1.2.18/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31f64bac63d8abcd6b8bf50f2582fa07/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1ce48d866f8e77bd91033b81601d444/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1ce48d866f8e77bd91033b81601d444/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/e1ce48d866f8e77bd91033b81601d444/jetified-android-gif-drawable-1.2.18/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5e8120094d3a1376a588d8488728cb1b/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5e8120094d3a1376a588d8488728cb1b/jetified-android-gif-drawable-1.2.18/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5e8120094d3a1376a588d8488728cb1b/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d855134c76807e45f77dc4ceb0147735/jetified-android-gif-drawable-1.2.18/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d855134c76807e45f77dc4ceb0147735/jetified-android-gif-drawable-1.2.18/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d855134c76807e45f77dc4ceb0147735/jetified-android-gif-drawable-1.2.18/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.droidsonroids.gif/android-gif-drawable/1.2.18/ffc3f5bc8b487fa46216546b465b9246943ae3b1/android-gif-drawable-1.2.18-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/pl.droidsonroids.gif/android-gif-drawable/1.2.18/73882cfd71dd5ebf352c6ae5c48e872684b2945a/android-gif-drawable-1.2.18-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

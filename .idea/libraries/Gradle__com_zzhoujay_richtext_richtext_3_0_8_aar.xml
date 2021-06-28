@@ -1,0 +1,45 @@
+<component name="libraryTable">
+  <library name="Gradle: com.zzhoujay.richtext:richtext:3.0.8@aar">
+    <ANNOTATIONS>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e0a730ddf138f68a1ed666bc0a48516/jetified-richtext-3.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b6cae5ef251d3ff76ed0d6a4f6fe3ee/jetified-richtext-3.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c3094307e7b3469a8cd9ef2c2b15970/jetified-richtext-3.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12755f70a800ef6237e942b086c1db69/jetified-richtext-3.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54f7316ee4668bafd6fdf2d3dd3d2959/jetified-richtext-3.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c73abb006c90a97eedad5c134b17d709/jetified-richtext-3.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97d3916fffa03990a2f4b6b47a489f81/jetified-richtext-3.0.8/annotations.zip!/" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92264997e2258e4f15e0bec0552cef82/jetified-richtext-3.0.8/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e0a730ddf138f68a1ed666bc0a48516/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0e0a730ddf138f68a1ed666bc0a48516/jetified-richtext-3.0.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b6cae5ef251d3ff76ed0d6a4f6fe3ee/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b6cae5ef251d3ff76ed0d6a4f6fe3ee/jetified-richtext-3.0.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/4b6cae5ef251d3ff76ed0d6a4f6fe3ee/jetified-richtext-3.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c3094307e7b3469a8cd9ef2c2b15970/jetified-richtext-3.0.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c3094307e7b3469a8cd9ef2c2b15970/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9c3094307e7b3469a8cd9ef2c2b15970/jetified-richtext-3.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12755f70a800ef6237e942b086c1db69/jetified-richtext-3.0.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12755f70a800ef6237e942b086c1db69/jetified-richtext-3.0.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/12755f70a800ef6237e942b086c1db69/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54f7316ee4668bafd6fdf2d3dd3d2959/jetified-richtext-3.0.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54f7316ee4668bafd6fdf2d3dd3d2959/jetified-richtext-3.0.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54f7316ee4668bafd6fdf2d3dd3d2959/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c73abb006c90a97eedad5c134b17d709/jetified-richtext-3.0.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c73abb006c90a97eedad5c134b17d709/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/c73abb006c90a97eedad5c134b17d709/jetified-richtext-3.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97d3916fffa03990a2f4b6b47a489f81/jetified-richtext-3.0.8/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97d3916fffa03990a2f4b6b47a489f81/jetified-richtext-3.0.8/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/97d3916fffa03990a2f4b6b47a489f81/jetified-richtext-3.0.8/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92264997e2258e4f15e0bec0552cef82/jetified-richtext-3.0.8/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92264997e2258e4f15e0bec0552cef82/jetified-richtext-3.0.8/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/92264997e2258e4f15e0bec0552cef82/jetified-richtext-3.0.8/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zzhoujay.richtext/richtext/3.0.8/52a113935caee7147e29b47e736b2895ee1bfa9c/richtext-3.0.8-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.zzhoujay.richtext/richtext/3.0.8/44cceed1cc0101513a91cf20ac110f2ee2764ba6/richtext-3.0.8-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_settings"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent" />
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/app_default_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="常规功能"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#7E57C2" />
+
+                    <Switch
+                        android:gravity="left|center"
+                        android:id="@+id/settings_app_notification"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="11dp"
+                        android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:text="显示常驻通知"
+                        android:typeface="serif" />
+
+                    <RelativeLayout
+                        android:paddingLeft="11dp"
+                        android:paddingRight="11dp"
+                        android:paddingTop="11dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Switch
+                            android:layout_alignParentLeft="true"
+                            android:id="@+id/settings_app_start_tip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="进入软件提示"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:layout_below="@+id/settings_app_start_tip"
+                            android:textSize="12sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="进入助手的提示"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="加载设置"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#7E57C2" />
+
+                    <LinearLayout
+                        android:padding="11dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Switch
+                            android:gravity="left|center"
+                            android:id="@+id/settings_mod_load_tips"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="加载插件提示"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="游戏进入过程中会提示您正在加载哪些MOD"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!--<View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />-->
+
+                <!--<LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="隐私设置"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+                        android:textColor="#7E57C2" />
+
+                    <LinearLayout
+                        android:padding="11dp"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <Switch
+                            android:gravity="left|center"
+                            android:id="@+id/settings_update_network_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:switchTextAppearance="@style/TextAppearance.AppCompat.Medium"
+                            android:text="上传网络日志"
+                            android:typeface="serif" />
+
+                        <TextView
+                            android:textSize="12sp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="收集您的网络数据以帮助我们分析用户分布情况"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    </LinearLayout>
+
+
+                </LinearLayout>-->
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

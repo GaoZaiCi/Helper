@@ -1,0 +1,238 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "net.fmp.helper"
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 20200612
+        versionName "R1"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        // 使用Cmake工具
+        externalNativeBuild {
+            cmake {
+                //基本配置
+                //cppFlags "-std=c++11 -frtti -fexceptions"
+                //混淆配置
+                cppFlags "-mllvm -sub_loop=5"//指令替换
+                cppFlags "-mllvm -bcf_loop=5"//伪控制流
+                cppFlags "-mllvm -fla"//控制流展平
+                cppFlags "-mllvm -split_num=5"//激活基本块划分
+                cppFlags "-mllvm -sobf"//字符串混淆
+                //生成多个版本的so文件
+                abiFilters("armeabi-v7a","arm64-v8a")
+            }
+        }
+        //只打包指定架构的so文件
+        ndk {
+            abiFilters "armeabi-v7a","arm64-v8a"
+        }
+    }
+
+    lintOptions {
+        checkReleaseBuilds false
+        // Or, if you prefer, you can continue to check for errors in release builds,
+        // but continue the build even when errors are found:
+        abortOnError false
+    }
+
+    // //修改生成的apk名字
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == 'release') {
+                //这个修改输出的APK路径 （路径不能是盘符根目录例如F：\\，要指定一个文件夹）
+                //variant.getPackageApplication().outputDirectory = new File("C:\\Users\\Gao在此\\Desktop\\Helper")
+                variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
+                    //这个修改输出APK的文件名
+                    apkData.outputFileName = "FMP Helper-${variant.versionCode}-${variant.versionName}-${variant.name}.apk"
+                }
+            }
+            /*if (variant.buildType.name.equals('debug')) {
+                //这个修改输出的APK路径 （路径不能是盘符根目录例如F：\\，要指定一个文件夹）
+                variant.getPackageApplication().outputDirectory = new File("C:\\Users\\Gao在此\\Desktop\\Helper")
+                variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
+                    //这个修改输出APK的文件名
+                    apkData.outputFileName = "FMP Helper-${variant.versionCode}-${variant.versionName}-${variant.name}.apk"
+                }
+            }*/
+        }
+    }
+
+    // 配置CMakeLists.txt路径
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+    signingConfigs {
+        release {
+            storeFile file("D:\\Android\\dev.jks")
+            storePassword 'gaozaici'
+            keyAlias 'dev'
+            keyPassword 'gaozaici'
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled true   //开启混淆
+            zipAlignEnabled true  //压缩优化
+            shrinkResources true  //移出无用资源
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            multiDexEnabled = true
+            signingConfig signingConfigs.release
+        }
+        dev {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            multiDexEnabled = true
+            signingConfig signingConfigs.release
+        }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            multiDexEnabled = true
+            signingConfig signingConfigs.release
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    repositories {
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    //bmob
+    useLibrary 'org.apache.http.legacy'
+    ndkVersion = '18.1.5063045'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //FMP启动器
+    implementation project(':fmp-launcher')
+    //文件选择器
+    implementation project(':lfilepickerlibrary')
+    //启动引导
+    implementation project(':noviceguide')
+
+    //implementation (name: 'launcher-release', ext: 'aar')
+
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test:runner:1.3.0-rc01'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-rc01'
+
+    //compileOnly files('DwPluginApi.jar')
+    //compileOnly files('DwNeteaseApi.jar')
+    //compileOnly files('com.netease.x19.jar')
+    //xposed支持
+    compileOnly 'de.robv.android.xposed:api:82'
+    //androidx
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'com.google.android.material:material:1.2.0-alpha06'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta6'
+    implementation 'androidx.gridlayout:gridlayout:1.0.0'
+    implementation 'androidx.recyclerview:recyclerview:1.2.0-alpha03'
+    implementation "androidx.annotation:annotation:1.1.0"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.preference:preference:1.1.1'
+    //Bmob支持
+    implementation "io.reactivex.rxjava2:rxjava:2.2.13"
+    implementation 'io.reactivex.rxjava2:rxandroid:2.1.1'
+    implementation 'com.squareup.okio:okio:2.7.0-alpha.lockfree.2'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.squareup.okhttp3:okhttp:4.7.2'
+    //LeanCloud支持
+    /*implementation('cn.leancloud:storage-android:6.3.0') {
+        exclude group: 'com.alibaba', module: 'fastjson'
+        exclude group: 'org.ligboy.retrofit2', module: 'converter-fastjson'
+    }*/
+    implementation 'com.alibaba:fastjson:1.2.70'
+    implementation 'org.ligboy.retrofit2:converter-fastjson-android:2.2.0'
+
+    //动画库
+    //implementation 'com.nineoldandroids:library:2.4.0'
+    //按钮库
+    implementation 'com.github.medyo:fancybuttons:1.9.1'
+    //腾讯云COS
+    //implementation 'com.tencent.qcloud:cosxml:5.4.26'
+    //自定义红点控件
+    implementation 'cn.yc:YCRedDotViewLib:1.0.3'
+    //图片加载库
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    //沉浸式状态栏
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.4'
+    //AnyLayer 浮层创建管理框架
+    implementation 'com.github.goweii:AnyLayer:3.4.1-androidx'
+    //FilterMenu 悬浮按钮菜单
+    implementation 'com.linroid.filtermenu:library:0.2.3@aar'
+    //加载Toast库
+    //implementation 'net.steamcrafted:load-toast:1.0.12'
+    //CircularProgressButton加载按钮库
+    implementation 'com.github.dmytrodanylyk.circular-progress-button:library:1.1.3'
+    //GifTextureView GIF图像
+    implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.18'
+    //Side Menu菜单
+    implementation 'com.github.yalantis:Side-Menu.Android:1.0.1'
+    //WaveSwipeRefreshLayout 水滴效果的下拉刷新
+    implementation 'com.github.recruit-lifestyle:WaveSwipeRefreshLayout:1.6'
+    //Android-SVProgressHUD Android 精仿iOS的提示库
+    implementation 'com.bigkoo:svprogresshud:1.0.6'
+    //SmartSwipe 侧滑就选智能侧滑，弹性侧滑、滑动抽屉、下拉刷新、侧滑返回以及侧滑删除等你想到和没想到的，通通搞定
+    implementation 'com.billy.android:smart-swipe:1.0.7'
+    //android x环境下兼容NestedScrolling
+    implementation 'com.billy.android:smart-swipe-x:1.0.0'
+    //Toasty 美化的Toast
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    //RichText  Android平台下的富文本解析器，支持Html和Markdown
+    implementation 'com.zzhoujay.richtext:richtext:3.0.8'
+    //SwipeRecyclerView 滑动排序侧滑删除
+    implementation 'com.yanzhenjie.recyclerview:x:1.3.2'
+    //Android JSON格式化显示，可配置样式、展开与折叠
+    //implementation 'com.yuyh.json:jsonviewer:1.0.6'
+    //android-json-view
+    implementation 'com.github.pvarry:android-json-viewer:v1.1'
+    //Android自定义图片选择器，适配Android7.0
+    //在自己项目里添加Glide的引用（Glide要求4.0版本以上）
+    implementation('com.github.bumptech.glide:glide:4.11.0') {
+        exclude(group: 'com.android.support', module: 'support-v4')
+    }
+    //添加该库引用，并去除自带的support-V4、Glide引用，防止版本冲突
+    implementation("com.lwkandroid:ImagePicker:1.4.4") {
+        exclude(group: 'com.android.support', module: 'support-v4')
+        exclude(group: 'com.github.bumptech.glide', module: 'glide')
+    }
+    //阿里云oss
+    implementation 'com.aliyun.dpa:oss-android-sdk:2.5.0'
+    //Android圆角ViewGrup/View库
+    implementation 'com.github.KuangGang:RoundCorners:1.0.4'
+    //Android BannerView 图片轮播控件，支持无限循环
+    implementation 'com.github.lany192:BannerView:3.0.1'
+    //本系统能够快速的为一个Activity里的任何一个View控件创建一个遮罩式的导航页，并且可以再高亮区域绘制任何你想要的布局或者lottie动画等炫酷效果
+    implementation 'com.binioter:guideview:1.0.0'
+    //JellyRefreshLayout 受棒棒糖过度滚动效果启发的从下拉到刷新的布局 ListView
+    //implementation 'com.github.allan1st:JellyRefreshLayout:2.0'
+    //Android智能下拉刷新框架-SmartRefreshLayout
+    //implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'  //1.0.5及以前版本的老用户升级需谨慎，API改动过大
+    //implementation 'com.scwang.smartrefresh:SmartRefreshHeader:1.1.0'  //没有使用特殊Header，可以不加这行
+
+    //Material Design Android Library
+    //implementation 'com.github.navasmdc:MaterialDesign:1.5@aar'
+    //
+    //implementation 'com.specyci:residemenu:1.6+'
+    /**
+     * ButterKnife
+     */
+    //implementation 'com.jakewharton:butterknife:10.1.0'
+    //implementation 'org.jetbrains:annotations:15.0'
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+
+    //implementation 'com.lucasurbas:listitemview:1.1.1'
+    //implementation 'com.github.bumptech.glide:glide:4.9.0'
+    //implementation 'com.facebook.fresco:fresco:2.0.0'
+
+}

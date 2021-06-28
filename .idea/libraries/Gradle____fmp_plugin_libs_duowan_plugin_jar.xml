@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./fmp-plugin/libs/duowan-plugin.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/fmp-plugin/libs/duowan-plugin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

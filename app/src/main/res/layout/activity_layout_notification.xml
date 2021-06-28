@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+android:layout_width="match_parent"
+android:layout_height="match_parent">
+
+<com.google.android.material.appbar.AppBarLayout
+	android:layout_height="wrap_content"
+	android:layout_width="match_parent">
+
+	<androidx.appcompat.widget.Toolbar
+		android:id="@+id/toolbar_notification"
+		android:layout_height="?attr/actionBarSize"
+		android:layout_width="match_parent" />
+
+
+</com.google.android.material.appbar.AppBarLayout>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:background="@color/colorItemx">
+
+		<LinearLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:orientation="vertical">
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:background="@color/app_default_background">
+
+				<Button
+					android:layout_width="match_parent"
+					style="?android:attr/buttonBarButtonStyle"
+					android:layout_height="wrap_content"
+					android:text="这是一个标题"
+					android:gravity="left|center"
+					android:layout_marginLeft="10dp"
+					android:layout_marginRight="10dp"
+					android:layout_marginTop="50dp"
+					android:layout_marginBottom="10dp"
+					android:textAppearance="?android:attr/textAppearanceLarge"
+					android:textColor="@color/colorAccent"
+					android:id="@+id/activitylayoutnotificationButton1"/>
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="时间-年-月-日-时-分"
+					android:padding="10dp"
+					android:layout_margin="10dp"
+					android:layout_gravity="right"
+					android:id="@+id/activitylayoutnotificationTextView1"
+					android:textColor="@color/colorWhite"/>
+
+			</LinearLayout>
+
+			<View
+				android:background="?android:attr/dividerVertical"
+				android:layout_width="match_parent"
+				android:layout_height="1dp"/>
+
+			<LinearLayout
+				android:orientation="vertical"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:layout_weight="1.0">
+
+				<TextView
+					android:layout_width="match_parent"
+					android:layout_height="match_parent"
+					android:text="Medium Text : 这是一段内容"
+					android:textAppearance="?android:attr/textAppearanceMedium"
+					android:padding="10dp"
+					android:id="@+id/activitylayoutnotificationTextView2"
+					android:layout_weight="1.0"/>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+	</ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

@@ -1,0 +1,4 @@
+D:/Android/Helper/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/fmp-jni.dir
+D:/Android/Helper/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+D:/Android/Helper/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/duowan-support.dir
+D:/Android/Helper/app/.cxx/cmake/debug/armeabi-v7a/CMakeFiles/edit_cache.dir

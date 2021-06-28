@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shortcuts xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--    1.shortcutId, 不用多说, 这肯定是一个唯一的id-->
+    <!--    2.enabled, 表示这个shortcut是否可用-->
+    <!--    3.shortcutShortLabel, 这里是配置的短名称, 下面还会有长名称, 如果长名称显示不下, 就显示短名称-->
+    <!--    4.shortcutLongLabel, 这里是配置的长名称, launcher会优先选择长名称显示-->
+    <!--    5.shortcutDisabledMessage, 这个配置是在我们选择一个不可用的shortcut时给用户的一个-->
+    <!--    1.intent, 这里表示我们点击shortcut时要干嘛, targetPackage是指定一个目标应用的包名, 2.targetClass是我们要跳转的目标类, 这里要注意的是android:action一定要配置, 否则会崩溃-->
+    <!--    3.categories, 这个东西目前位置官方只给提供了android.shortcut.conversation-->
+
+    <shortcut
+        android:shortcutId="uninstall"
+        android:enabled="true"
+        android:icon="@drawable/emp_logo"
+        android:shortcutShortLabel="@string/shortcut_uninstall_short_label"
+        android:shortcutLongLabel="@string/shortcut_uninstall_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_uninstall_disabled_message"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="net.fmp.helper"
+            android:targetClass="com.fmp.activity.LaunchActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+    <shortcut
+        android:shortcutId="zan"
+        android:enabled="true"
+        android:icon="@drawable/emp_logo"
+        android:shortcutShortLabel="@string/shortcut_zan_short_label"
+        android:shortcutLongLabel="@string/shortcut_zan_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_zan_disabled_message"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="net.fmp.helper"
+            android:targetClass="com.fmp.accessibility.AccessibilityOpenHelperActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+
+    <shortcut
+        android:shortcutId="open"
+        android:enabled="true"
+        android:icon="@drawable/emp_logo"
+        android:shortcutShortLabel="@string/shortcut_open_short_label"
+        android:shortcutLongLabel="@string/shortcut_open_long_label"
+        android:shortcutDisabledMessage="@string/shortcut_open_disabled_message"
+        tools:targetApi="n_mr1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="net.fmp.helper"
+            android:targetClass="com.fmp.helper.MainActivity" />
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+
+
+</shortcuts>

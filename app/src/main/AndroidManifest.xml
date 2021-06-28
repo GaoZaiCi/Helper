@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="net.fmp.helper">
+
+    <uses-permission android:name="fmp.gaozaici.helper" /> <!-- 拥有完全的网络访问权限 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" /> <!-- 查看网络连接 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" /> <!-- 查看WLAN连接 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" /> <!-- 防止手机休眠 -->
+    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- 修改或删除您的USB存储设备中的内容 -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" /> <!-- 此应用可显示在其他应用上方 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.SYSTEM_OVERLAY_WINDOW" /> <!-- 开机启动 -->
+    <!-- <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" /> -->
+    <!-- 访问大致位置信息（以网络为依据） -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" /> -->
+    <!-- 获取额外的位置信息提供程序命令 -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" /> -->
+    <!-- 访问确切位置信息（以 GPS 和网络为依据） -->
+    <!-- <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" /> -->
+    <!-- 检索正在运行的应用 -->
+    <uses-permission android:name="android.permission.GET_TASKS" /> <!-- 更改网络连接性 -->
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" /> <!-- 关闭其他应用 -->
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" /> <!-- 计算应用存储空间 -->
+    <uses-permission android:name="android.permission.GET_PACKAGE_SIZE" /> <!-- 读取日历活动和详情 -->
+    <!-- <uses-permission android:name="android.permission.READ_CALENDAR" /> -->
+    <!-- 读取手机状态和身份 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" /> <!-- 控制振动 -->
+    <uses-permission android:name="android.permission.VIBRATE" /> <!-- 对正在运行的应用重新排序 -->
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.fmp.core.HelperApplication"
+        android:allowBackup="false"
+        android:configChanges="orientation"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:sharedUserId="com.fmp.helper"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:replace="android:allowBackup"
+        tools:ignore="LockedOrientationActivity">
+        <!-- <meta-data -->
+        <!-- android:name="xposedmodule" -->
+        <!-- android:value="false" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="xposedminversion" -->
+        <!-- android:value="54" /> -->
+        <!-- <meta-data -->
+        <!-- android:name="xposeddescription" -->
+        <!-- android:value="@string/XposedHook" /> -->
+        <!-- QQ登录需要 -->
+        <uses-library
+            android:name="org.apache.http.legacy"
+            android:required="false" />
+
+        <provider
+            android:name="cn.bmob.v3.util.BmobContentProvider"
+            android:authorities="net.fmp.helper.BmobContentProvider"
+            android:exported="false" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="net.fmp.helper.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fmp_file_paths" />
+        </provider>
+
+        <activity
+            android:name="com.fmp.activity.LaunchActivity"
+            android:label="@string/launch_name"
+            android:launchMode="singleTask"
+            android:theme="@style/DialogActivityStyle">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.shortcuts"
+                android:resource="@xml/fmp_shortcuts" />
+        </activity>
+        <activity
+            android:name="com.fmp.activity.NoBackActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name="com.fmp.activity.ErrorActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/DialogActivityStyle" />
+        <activity
+            android:name="com.fmp.activity.ImportActivity"
+            android:label="@string/import_mod"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="file" />
+                <data android:mimeType="*/*" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.js" />
+                <data android:pathPattern=".*\..*\.js" />
+                <data android:pathPattern=".*\..*\..*\.js" />
+                <data android:pathPattern=".*\..*\..*\..*\.js" />
+                <data android:pathPattern=".*\.fmod" />
+                <data android:pathPattern=".*\..*\.fmod" />
+                <data android:pathPattern=".*\..*\..*\.fmod" />
+                <data android:pathPattern=".*\..*\..*\..*\.fmod" />
+                <data android:pathPattern=".*\.modpkg" />
+                <data android:pathPattern=".*\..*\.modpkg" />
+                <data android:pathPattern=".*\..*\..*\.modpkg" />
+                <data android:pathPattern=".*\..*\..*\..*\.modpkg" />
+                <data android:pathPattern=".*\.mcskin" />
+                <data android:pathPattern=".*\..*\.mcskin" />
+                <data android:pathPattern=".*\..*\..*\.mcskin" />
+                <data android:pathPattern=".*\..*\..*\..*\.mcskin" />
+                <data android:pathPattern=".*\.mcpack" />
+                <data android:pathPattern=".*\..*\.mcpack" />
+                <data android:pathPattern=".*\..*\..*\.mcpack" />
+                <data android:pathPattern=".*\..*\..*\..*\.mcpack" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="content" />
+                <data android:mimeType="*/*" />
+                <data android:host="*" />
+                <data android:pathPattern=".*\.js" />
+                <data android:pathPattern=".*\..*\.js" />
+                <data android:pathPattern=".*\..*\..*\.js" />
+                <data android:pathPattern=".*\..*\..*\..*\.js" />
+                <data android:pathPattern=".*\.fmod" />
+                <data android:pathPattern=".*\..*\.fmod" />
+                <data android:pathPattern=".*\..*\..*\.fmod" />
+                <data android:pathPattern=".*\..*\..*\..*\.fmod" />
+                <data android:pathPattern=".*\.modpkg" />
+                <data android:pathPattern=".*\..*\.modpkg" />
+                <data android:pathPattern=".*\..*\..*\.modpkg" />
+                <data android:pathPattern=".*\..*\..*\..*\.modpkg" />
+                <data android:pathPattern=".*\.mcskin" />
+                <data android:pathPattern=".*\..*\.mcskin" />
+                <data android:pathPattern=".*\..*\..*\.mcskin" />
+                <data android:pathPattern=".*\..*\..*\..*\.mcskin" />
+                <data android:pathPattern=".*\.mcpack" />
+                <data android:pathPattern=".*\..*\.mcpack" />
+                <data android:pathPattern=".*\..*\..*\.mcpack" />
+                <data android:pathPattern=".*\..*\..*\..*\.mcpack" />
+            </intent-filter>
+        </activity> <!-- 腾讯登录 -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent101730033" /> <!-- 替换成自己在腾讯开发平台申请的的APPID -->
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="cn.bmob.v3.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <receiver
+            android:name="com.fmp.receiver.HomeReceiver"
+            android:enabled="true"
+            android:exported="true" />
+        <!--<receiver
+            android:name="com.fmp.receiver.DeviceReceiver"
+            android:description="@string/receiver_description"
+            android:label="@string/app_name"
+            android:permission="android.permission.BIND_DEVICE_ADMIN">
+            <meta-data
+                android:name="android.app.device_admin"
+                android:resource="@xml/fmp_device_manager_policies" />
+
+            <intent-filter>
+                <action android:name="android.app.action.DEVICE_ADMIN_ENABLED" />
+            </intent-filter>
+        </receiver>-->
+        <receiver android:name="com.fmp.receiver.LoaderReceiver">
+            <intent-filter android:priority="100">
+                <action android:name="HelperClient" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name="com.fmp.accessibility.AccessibilityOpenHelperActivity"
+            android:excludeFromRecents="true"
+            android:launchMode="singleTask"
+            android:process=":BackgroundService"
+            android:taskAffinity="com.open.helper" />
+        <service
+            android:name="com.fmp.accessibility.AccessibilitySampleService"
+            android:exported="true"
+            android:label="@string/accessibility_tip"
+            android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE"
+            android:process=":BackgroundService">
+            <intent-filter>
+                <action android:name="android.accessibilityservice.AccessibilityService" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.accessibilityservice"
+                android:resource="@xml/fmp_qq_click_accessibility_config" />
+        </service>
+        <service
+            android:name="com.fmp.service.HelperService"
+            android:enabled="true"
+            android:process=":HelperService" />
+        <activity
+            android:name="com.fmp.helper.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+        <!-- jScript插件用的activity -->
+        <activity
+            android:name="com.fmp.helper.activity.ModFileActivity"
+            android:label="@string/activity_label_mod_script"
+            android:screenOrientation="portrait" /> <!-- 游戏大厅Activity -->
+        <activity
+            android:name="com.fmp.helper.activity.GameLobbyActivity"
+            android:label="@string/activity_label_game_lobby"
+            android:screenOrientation="portrait" /> <!-- 存档管理Activity -->
+        <activity
+            android:name="com.fmp.helper.activity.ArchiveActivity"
+            android:label="@string/activity_label_archive"
+            android:screenOrientation="portrait" /> <!-- 插件商城Activity -->
+        <activity
+            android:name="com.fmp.helper.activity.ModMallActivity"
+            android:label="@string/activity_label_mod_mall"
+            android:screenOrientation="portrait" /> <!-- 种子中心Activity -->
+        <activity
+            android:name="com.fmp.helper.activity.SeedsActivity"
+            android:label="@string/activity_label_seeds"
+            android:screenOrientation="portrait" /> <!-- 通知用的Activity -->
+        <activity
+            android:name="com.fmp.helper.activity.NotificationActivity"
+            android:label="@string/activity_label_notification"
+            android:screenOrientation="portrait" /> <!-- 设置界面用的Activity -->
+        <activity
+            android:name="com.fmp.helper.activity.SettingActivity"
+            android:label="@string/activity_label_setting"
+            android:screenOrientation="portrait" /> <!-- 关于我们 -->
+        <activity
+            android:name="com.fmp.helper.activity.AboutActivity"
+            android:label="@string/activity_label_about"
+            android:screenOrientation="portrait" /> <!-- 皮肤管理 -->
+        <activity
+            android:name="com.fmp.helper.activity.SkinsActivity"
+            android:label="@string/activity_label_skin"
+            android:launchMode="standard"
+            android:screenOrientation="portrait" /> <!-- 材质光影 -->
+        <activity
+            android:name="com.fmp.helper.activity.TexturesActivity"
+            android:label="@string/activity_label_texture"
+            android:screenOrientation="portrait" /> <!-- 登录 -->
+        <activity
+            android:name="com.fmp.activity.LogInActivity"
+            android:label="@string/activity_label_login"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <activity android:name="com.fmp.helper.activity.MeInfoActivity"
+            android:label="@string/activity_label_me_info"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name="com.fmp.helper.activity.PluginActivity"
+            android:label="@string/activity_label_plugin"
+            android:launchMode="standard"
+            android:screenOrientation="portrait"/>
+
+    </application>
+
+</manifest>

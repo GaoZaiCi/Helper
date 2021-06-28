@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_about"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_width="match_parent" />
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/about_me_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/app_default_background"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ScrollView
+            style="@style/ScrollViewStyle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="top|center">
+
+                <View
+                    android:visibility="gone"
+                    android:background="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/nav_header_height"
+                    android:gravity="left|center"
+                    android:orientation="horizontal"
+                    android:paddingBottom="@dimen/activity_vertical_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:paddingTop="@dimen/activity_vertical_margin"
+                    android:background="#FF8D6E63">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView"
+                            android:layout_width="100dp"
+                            android:layout_height="100dp"
+                            android:paddingTop="@dimen/nav_header_vertical_spacing"
+                            android:src="@drawable/emp_logo" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/activity_vertical_margin">
+
+                        <TextView
+                            android:id="@+id/about_me_version_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="5dp"
+                            android:text="FMP Helper"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/colorAccent" />
+
+                        <TextView
+                            android:textColor="@color/colorWhite"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="一个提供方便的游戏辅助工具~"
+                            android:textAppearance="?android:attr/textAppearanceSmall"
+                            android:padding="5dp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/shape_background"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="联系我们"
+                        android:textAppearance="?android:attr/textAppearanceMedium"
+                        android:padding="15dp" />
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:orientation="horizontal"
+                            android:padding="10dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content">
+                            <Button
+                                android:id="@+id/QQGroupService"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:text="授权服务群"
+                                android:textAllCaps="false"
+                                android:visibility="visible" />
+                            <Button
+                                android:id="@+id/QQGroup"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:text="交流一群"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/QQGroup2"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:text="交流二群"
+                                android:textAllCaps="false" />
+
+                            <Button
+                                android:id="@+id/QQGroup3"
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:text="交流三群"
+                                android:textAllCaps="false" />
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <include layout="@layout/aboutme_include_people" />
+
+                <include layout="@layout/aboutme_include_dev" />
+
+                <TextView
+                    android:id="@+id/about_me_copyright"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="FMP Helper Copyright©2020 FMP Team"
+                    android:textAllCaps="false"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+
+

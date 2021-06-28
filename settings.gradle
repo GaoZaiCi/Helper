@@ -1,0 +1,3 @@
+include ':app',':fmp-launcher',':lfilepickerlibrary',':noviceguide', ':tools'
+include ':proguard'
+include ':fmp-plugin'

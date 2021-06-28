@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent">
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="1800px"
+			android:gravity="bottom|center"
+			android:background="@drawable/back_headicon">
+
+			<LinearLayout
+				android:orientation="horizontal"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:gravity="left|center">
+
+				<com.fmp.view.CircleImageView
+					android:layout_width="80dp"
+					android:layout_height="80dp"
+					android:layout_centerInParent="true"
+					android:src="@drawable/back_headicon"
+					civ_border_width="2dp"
+					civ_border_color="@color/colorAccent"
+					android:layout_margin="10dp"
+					android:elevation="2dp"
+					android:id="@+id/dialogauthorinfoCircleImageView1"/>
+
+				<LinearLayout
+					android:orientation="vertical"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_margin="5dp">
+
+					<TextView
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:text="HELPER用户昵称"
+						android:textAppearance="?android:attr/textAppearanceMedium"
+						android:padding="10dp"/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="HELPER用户签名"
+						android:textAppearance="?android:attr/textAppearanceSmall"
+						android:padding="10dp"/>
+
+				</LinearLayout>
+
+			</LinearLayout>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="授权状态"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="15dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Small Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="15dp"
+				android:gravity="right|center"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="授权状态"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="15dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Small Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="15dp"
+				android:gravity="right|center"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="授权状态"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="15dp"/>
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Small Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="15dp"
+				android:gravity="right|center"/>
+
+		</LinearLayout>
+
+		<View
+			android:background="?android:attr/dividerVertical"
+			android:layout_width="match_parent"
+			android:layout_height="1dp"/>
+		
+	</LinearLayout>
+
+</ScrollView>
+

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_mod_mall_submission"
+        android:title="投稿资源" />
+
+    <item
+        android:id="@+id/menu_mod_mall_report"
+        android:title="举报资源" />
+</menu>

@@ -1,0 +1,54 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        applicationId "com.fmp.plugin"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    //修改生成的apk名字
+    applicationVariants.all { variant ->
+        variant.outputs.all { output ->
+            if (variant.buildType.name == 'release') {
+                //这个修改输出的APK路径 （路径不能是盘符根目录例如F：\\，要指定一个文件夹）
+                variant.getPackageApplication().outputDirectory = new File("D:\\Android\\Helper\\app\\src\\main\\jniLibs\\armeabi-v7a")
+                variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
+                    //这个修改输出APK的文件名
+                    apkData.outputFileName = "libfmp-support.so"
+                }
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true   //开启混淆
+            zipAlignEnabled true  //压缩优化
+            shrinkResources true  //移出无用资源
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        dev {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    testImplementation 'junit:junit:4.13'
+    compileOnly files('com.netease.x19.jar')
+}

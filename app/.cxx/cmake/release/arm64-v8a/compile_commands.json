@@ -1,0 +1,25 @@
+[
+{
+  "directory": "D:/Android/Helper/app/.cxx/cmake/release/arm64-v8a",
+  "command": "D:\\Android\\SDK\\ndk\\18.1.5063045\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dfmp_jni_EXPORTS -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\fmp-jni.dir\\src\\main\\jni\\fmp-jni.cpp.o -c D:\\Android\\Helper\\app\\src\\main\\jni\\fmp-jni.cpp",
+  "file": "D:/Android/Helper/app/src/main/jni/fmp-jni.cpp"
+},
+
+{
+  "directory": "D:/Android/Helper/app/.cxx/cmake/release/arm64-v8a",
+  "command": "D:\\Android\\SDK\\ndk\\18.1.5063045\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dfmp_jni_EXPORTS -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\fmp-jni.dir\\src\\main\\jni\\FileUtil.cpp.o -c D:\\Android\\Helper\\app\\src\\main\\jni\\FileUtil.cpp",
+  "file": "D:/Android/Helper/app/src/main/jni/FileUtil.cpp"
+},
+
+{
+  "directory": "D:/Android/Helper/app/.cxx/cmake/release/arm64-v8a",
+  "command": "D:\\Android\\SDK\\ndk\\18.1.5063045\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dfmp_jni_EXPORTS -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\fmp-jni.dir\\src\\main\\jni\\Base64.cpp.o -c D:\\Android\\Helper\\app\\src\\main\\jni\\Base64.cpp",
+  "file": "D:/Android/Helper/app/src/main/jni/Base64.cpp"
+},
+
+{
+  "directory": "D:/Android/Helper/app/.cxx/cmake/release/arm64-v8a",
+  "command": "D:\\Android\\SDK\\ndk\\18.1.5063045\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe --target=aarch64-none-linux-android --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/aarch64-linux-android-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dduowan_support_EXPORTS -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/aarch64-linux-android -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -O2 -DNDEBUG  -fPIC   -o CMakeFiles\\duowan-support.dir\\src\\main\\jni\\duowan\\duowan-support.cpp.o -c D:\\Android\\Helper\\app\\src\\main\\jni\\duowan\\duowan-support.cpp",
+  "file": "D:/Android/Helper/app/src/main/jni/duowan/duowan-support.cpp"
+}
+]

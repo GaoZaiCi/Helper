@@ -1,0 +1,454 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fmp.view.RoundAngleFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFFEFEFE"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="7dp"
+                android:layout_marginStart="10dp"
+                android:tag="dialog_lock" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8C39C99"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="辅助功能"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#0479E5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="7dp"
+                android:layout_marginEnd="10dp"
+                android:tag="dialog_exit" />
+
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#FFFEFEFE">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:tag="layout_killing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:tag="fun_killing_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="范围自动攻击"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_killing" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+
+                <LinearLayout
+                    android:tag="layout_click_kill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:tag="fun_click_kill_msg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="点击自动攻击"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_click_kill" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider2"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="添加副手物品"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_item_to_offhand" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider3"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="设置副手物品"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_carried_to_offhand" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider4"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="任意副手物品"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_item_allow_offhand" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider5"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+
+                <LinearLayout
+                    android:tag="layout_operator"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="伪操作员权限"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_operator" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+
+                <LinearLayout
+                    android:tag="layout_destroy_ten"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="十字破坏方块"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_destroy_ten" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider7"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+
+                <LinearLayout
+                    android:tag="layout_destroy_click"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="点击破坏方块"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_destroy_click" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:tag="divider8"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/dividerVertical" />
+
+                <LinearLayout
+                    android:tag="layout_fast_build"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:padding="10dp"
+                        android:text="手持自动搭路"
+                        android:textAppearance="?android:attr/textAppearanceSmall"
+                        android:textColor="#0479E5" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="?android:attr/dividerHorizontal" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="end"
+                        android:orientation="horizontal">
+
+                        <com.fmp.view.SwitchView
+                            android:layout_width="40dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="7dp"
+                            android:layout_marginEnd="10dp"
+                            android:layout_marginBottom="7dp"
+                            android:tag="fun_fast_build" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+
+</com.fmp.view.RoundAngleFrameLayout>
+

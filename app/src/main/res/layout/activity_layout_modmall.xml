@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+
+	<com.google.android.material.appbar.AppBarLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/toolbar_mod_mall"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize" />
+
+	</com.google.android.material.appbar.AppBarLayout>
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+		<androidx.core.widget.NestedScrollView
+			android:id="@+id/mod_mall_nestedview"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:background="@color/app_default_background">
+
+			<androidx.recyclerview.widget.RecyclerView
+				android:id="@+id/mod_mall_recyclerview"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent" />
+
+		</androidx.core.widget.NestedScrollView>
+
+		<RelativeLayout
+			android:id="@+id/not_item_layout"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:visibility="gone">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:gravity="center"
+				android:text="貌似没有数据呢，刷新试试吧~"
+				android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+		</RelativeLayout>
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+

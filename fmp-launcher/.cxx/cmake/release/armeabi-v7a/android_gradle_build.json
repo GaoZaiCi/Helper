@@ -1,0 +1,125 @@
+
+{
+	"buildFiles" : [ "D:/Android/Helper/fmp-launcher/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"D:\\Android\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\release\\armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"minecraftpe-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "minecraftpe",
+			"buildType" : "release",
+			"output" : "D:/Android/Helper/fmp-launcher/src/main/jni/include/libminecraftpe.so",
+			"toolchain" : "3942226997"
+		},
+		"netease-support-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "netease-support",
+			"buildCommand" : "D:\\Android\\SDK\\cmake\\3.6.4111459\\bin\\cmake.exe --build D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\release\\armeabi-v7a --target netease-support",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/netease-support.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/fmp-launcher.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/FileUtil.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/md5/md5.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/md5/md5file.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot -Dnetease_support_EXPORTS  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/substrate/hde64.c",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/substrate/SubstrateDebug.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/substrate/SubstrateHook.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/substrate/SubstratePosixMemory.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/elfhook/elfhook.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/elfhook/elfio.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot  -Dnetease_support_EXPORTS -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\android\\support\\include -isystem D:\\Android\\SDK\\ndk\\18.1.5063045\\sources\\cxx-stl\\llvm-libc++abi\\include  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -std=c++11 -frtti -fexceptions -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC    -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/elfhook/elfutils.cpp",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot -Dnetease_support_EXPORTS  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/inlinehook/inlineHook.c",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot -Dnetease_support_EXPORTS  -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Os -DNDEBUG  -fPIC      -c ",
+					"src" : "D:/Android/Helper/fmp-launcher/src/main/jni/inlinehook/relocate.c",
+					"workingDirectory" : "D:/Android/Helper/fmp-launcher/.cxx/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "D:/Android/Helper/fmp-launcher/libs/armeabi-v7a/libnetease-support.so",
+			"toolchain" : "3942226997"
+		}
+	},
+	"toolchains" : 
+	{
+		"3942226997" : 
+		{
+			"cCompilerExecutable" : "D:/Android/SDK/ndk/18.1.5063045/toolchains/llvm/prebuilt/windows-x86_64/bin/clang.exe",
+			"cppCompilerExecutable" : "D:/Android/SDK/ndk/18.1.5063045/toolchains/llvm/prebuilt/windows-x86_64/bin/clang++.exe"
+		}
+	}
+}

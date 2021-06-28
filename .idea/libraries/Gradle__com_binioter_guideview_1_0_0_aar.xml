@@ -1,0 +1,35 @@
+<component name="libraryTable">
+  <library name="Gradle: com.binioter:guideview:1.0.0@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b658b42d1b219ddd9646fe16fbf0be30/jetified-guideview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/b658b42d1b219ddd9646fe16fbf0be30/jetified-guideview-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54982aa6aea24b4800d82f6a73e525bc/jetified-guideview-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54982aa6aea24b4800d82f6a73e525bc/jetified-guideview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/54982aa6aea24b4800d82f6a73e525bc/jetified-guideview-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f79cef6352be1963949e6c13f7cbdec2/jetified-guideview-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f79cef6352be1963949e6c13f7cbdec2/jetified-guideview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/f79cef6352be1963949e6c13f7cbdec2/jetified-guideview-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65ca8f92d094d649dbb4b2e9b88d282c/jetified-guideview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65ca8f92d094d649dbb4b2e9b88d282c/jetified-guideview-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/65ca8f92d094d649dbb4b2e9b88d282c/jetified-guideview-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ad7c4d5117adbe9e937a1535b74eca8/jetified-guideview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ad7c4d5117adbe9e937a1535b74eca8/jetified-guideview-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/9ad7c4d5117adbe9e937a1535b74eca8/jetified-guideview-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0ce12d53fb1a82b6ab0e3d4c9053615/jetified-guideview-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0ce12d53fb1a82b6ab0e3d4c9053615/jetified-guideview-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a0ce12d53fb1a82b6ab0e3d4c9053615/jetified-guideview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d45eb5e1539f6a215b3801df4e744917/jetified-guideview-1.0.0/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d45eb5e1539f6a215b3801df4e744917/jetified-guideview-1.0.0/AndroidManifest.xml" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/d45eb5e1539f6a215b3801df4e744917/jetified-guideview-1.0.0/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31f050141c8996afea3f948dc6116d28/jetified-guideview-1.0.0/AndroidManifest.xml" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31f050141c8996afea3f948dc6116d28/jetified-guideview-1.0.0/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/31f050141c8996afea3f948dc6116d28/jetified-guideview-1.0.0/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.binioter/guideview/1.0.0/5f605dce3cea7777b2343f9c388d3be8522d83b/guideview-1.0.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.binioter/guideview/1.0.0/f256c8307e2fd8e54f31be619b4c69e5ecd93104/guideview-1.0.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

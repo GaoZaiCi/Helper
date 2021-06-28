@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:elevation="2dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="center">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Medium Text"
+				android:textAppearance="?android:attr/textAppearanceMedium"
+				android:padding="10dp"
+				android:layout_weight="1.0"
+				android:textColor="@color/colorWhite"
+				android:singleLine="true"
+				android:id="@+id/mainframetab3itemTextView1"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_margin="10dp"
+				android:textColor="@color/colorWhite"
+				android:id="@+id/mainframetab3itemTextView2"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:text="Text"
+				android:layout_marginLeft="10dp"
+				android:layout_marginBottom="5dp"
+				android:textColor="@color/colorWhite"
+				android:singleLine="true"
+				android:id="@+id/mainframetab3itemTextView3"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

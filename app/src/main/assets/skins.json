@@ -1,0 +1,27 @@
+{
+  "skins": [
+    {
+      "localization_name": "steve",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "skin_steve.png",
+      "cape": "cape.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "alex",
+      "geometry": "geometry.humanoid.customSlim",
+      "texture": "skin_alex.png",
+      "cape": "capeTwo.png",
+      "type": "free"
+    },
+    {
+      "localization_name": "dummy",
+      "geometry": "geometry.humanoid.custom",
+      "texture": "dummy.png",
+      "cape": "cape.png",
+      "type": "custom"
+    }
+  ],
+  "serialize_name": "Standard",
+  "localization_name": "Standard"
+}

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:background="#FFA1887F"
+	android:gravity="center">
+
+	<ProgressBar
+		android:layout_width="match_parent"
+		style="?android:attr/progressBarStyleHorizontal"
+		android:layout_height="wrap_content"
+		android:indeterminateOnly="true"/>
+
+	<RadioGroup
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:id="@+id/activityfooterRadioGroup">
+
+		<RadioButton
+			android:tint="@color/colorWhite"
+			android:layout_width="0dp"
+			android:checked="true"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="?android:attr/selectableItemBackgroundBorderless"
+			android:button="@null"
+			android:drawablePadding="2dp"
+			android:drawableTop="@drawable/main_footer_tab1"
+			android:gravity="center"
+			android:text="@string/main_footer_tab1"
+			android:textColor="@drawable/main_footer_tab"
+			android:textSize="10sp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="4dp"
+			android:id="@+id/activityfooterRadioButton1"/>
+
+		<RadioButton
+			android:tint="@color/colorWhite"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="?android:attr/selectableItemBackgroundBorderless"
+			android:button="@null"
+			android:drawablePadding="2dp"
+			android:drawableTop="@drawable/main_footer_tab2"
+			android:gravity="center"
+			android:text="@string/main_footer_tab2"
+			android:textColor="@drawable/main_footer_tab"
+			android:textSize="10sp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="4dp"
+			android:id="@+id/activityfooterRadioButton2"/>
+
+		<RadioButton
+			android:tint="@color/colorWhite"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="?android:attr/selectableItemBackgroundBorderless"
+			android:button="@null"
+			android:drawablePadding="2dp"
+			android:drawableTop="@drawable/main_footer_tab3"
+			android:gravity="center"
+			android:text="@string/main_footer_tab3"
+			android:textColor="@drawable/main_footer_tab"
+			android:textSize="10sp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="4dp"
+			android:id="@+id/activityfooterRadioButton3"/>
+
+		<RadioButton
+			android:tint="@color/colorWhite"
+			android:layout_width="0dp"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_weight="1"
+			android:background="?android:attr/selectableItemBackgroundBorderless"
+			android:button="@null"
+			android:drawablePadding="2dp"
+			android:drawableTop="@drawable/main_footer_tab4"
+			android:gravity="center"
+			android:text="@string/main_footer_tab4"
+			android:textColor="@drawable/main_footer_tab"
+			android:textSize="10sp"
+			android:textAppearance="?android:attr/textAppearanceMedium"
+			android:padding="4dp"
+			android:id="@+id/activityfooterRadioButton4"/>
+
+	</RadioGroup>
+
+</LinearLayout>
+

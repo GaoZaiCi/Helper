@@ -1,0 +1,56 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.3"
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+        // 使用Cmake工具
+        externalNativeBuild {
+            cmake {
+                cppFlags "-std=c++11 -frtti -fexceptions"
+                //混淆配置
+                cppFlags "-mllvm -sub_loop=5"//指令替换
+                cppFlags "-mllvm -bcf_loop=5"//伪控制流
+                cppFlags "-mllvm -fla"//控制流展平
+                cppFlags "-mllvm -split_num=5"//激活基本块划分
+                cppFlags "-mllvm -sobf"//字符串混淆
+                //生成多个版本的so文件
+                //因为游戏限制这个架构就只能用这个
+                abiFilters("armeabi-v7a")
+                arguments "-DANDROID_STL=c++_shared"
+            }
+        }
+        //只打包指定架构的so文件
+        ndk {
+            abiFilters "armeabi-v7a"
+        }
+    }
+    // 配置CMakeLists.txt路径
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        dev {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    ndkVersion = '18.1.5063045'
+
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+}

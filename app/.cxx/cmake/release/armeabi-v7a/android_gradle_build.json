@@ -1,0 +1,68 @@
+{
+  "stringTable": {
+    "0": "D:/Android/Helper/app/.cxx/cmake/release/armeabi-v7a",
+    "1": "--target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot -Dfmp_jni_EXPORTS -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG -fPIC",
+    "2": "--target=armv7-none-linux-androideabi --gcc-toolchain=D:/Android/SDK/ndk/18.1.5063045/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64 --sysroot=D:/Android/SDK/ndk/18.1.5063045/sysroot -Dduowan_support_EXPORTS -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include -isystem D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include -isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG -fPIC"
+  },
+  "buildFiles": [
+    "D:\\Android\\SDK\\ndk\\18.1.5063045\\build\\cmake\\android.toolchain.cmake",
+    "D:\\Android\\Helper\\app\\CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "D:\\Android\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Android\\Helper\\app\\.cxx\\cmake\\release\\armeabi-v7a\" clean"
+  ],
+  "buildTargetsCommand": "D:\\Android\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Android\\Helper\\app\\.cxx\\cmake\\release\\armeabi-v7a\" {LIST_OF_TARGETS_TO_BUILD}",
+  "libraries": {
+    "duowan-support-Release-armeabi-v7a": {
+      "buildCommand": "D:\\Android\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Android\\Helper\\app\\.cxx\\cmake\\release\\armeabi-v7a\" duowan-support",
+      "buildType": "release",
+      "toolchain": "227520552",
+      "abi": "armeabi-v7a",
+      "artifactName": "duowan-support",
+      "files": [
+        {
+          "src": "D:\\Android\\Helper\\app\\src\\main\\jni\\duowan\\duowan-support.cpp",
+          "flagsOrdinal": 2,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\Android\\Helper\\app\\libs\\armeabi-v7a\\libduowan-support.so"
+    },
+    "fmp-jni-Release-armeabi-v7a": {
+      "buildCommand": "D:\\Android\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe -C \"D:\\Android\\Helper\\app\\.cxx\\cmake\\release\\armeabi-v7a\" fmp-jni",
+      "buildType": "release",
+      "toolchain": "227520552",
+      "abi": "armeabi-v7a",
+      "artifactName": "fmp-jni",
+      "files": [
+        {
+          "src": "D:\\Android\\Helper\\app\\src\\main\\jni\\fmp-jni.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\Android\\Helper\\app\\src\\main\\jni\\FileUtil.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        },
+        {
+          "src": "D:\\Android\\Helper\\app\\src\\main\\jni\\Base64.cpp",
+          "flagsOrdinal": 1,
+          "workingDirectoryOrdinal": 0
+        }
+      ],
+      "headers": [],
+      "output": "D:\\Android\\Helper\\app\\libs\\armeabi-v7a\\libfmp-jni.so"
+    }
+  },
+  "toolchains": {
+    "227520552": {
+      "cppCompilerExecutable": "D:\\Android\\SDK\\ndk\\18.1.5063045\\toolchains\\llvm\\prebuilt\\windows-x86_64\\bin\\clang++.exe"
+    }
+  },
+  "cFileExtensions": [],
+  "cppFileExtensions": [
+    "cpp"
+  ]
+}

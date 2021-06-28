@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fmp_user_login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_default_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:text="请选择登录方式"
+            android:textAppearance="@style/TextAppearance.AppCompat.SearchResult.Title" />
+
+        <TextView
+            android:id="@+id/fmp_user_login_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:textSize="15sp"
+            android:paddingTop="10dp"
+            android:text="取消登录"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionMode.Subtitle" />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_weight="1.0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:padding="5dp"
+                fancy:srcCompat="@drawable/new_fmp_logo" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/fmp_user_authorize_login"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="授权登录"
+                fancy:fb_textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_weight="1.0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_gravity="center"
+                android:layout_width="160dp"
+                android:layout_height="140dp"
+                android:padding="5dp"
+                fancy:srcCompat="@drawable/qq_login_icon" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:layout_gravity="center"
+                android:id="@+id/fmp_user_qq_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                fancy:fb_defaultColor="#7ab800"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="30dp"
+                fancy:fb_text="QQ登录"
+                fancy:fb_textColor="#FFFFFF" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

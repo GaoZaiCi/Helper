@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:background="@color/colorWhite"
+	android:elevation="2dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="自定义包名"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:padding="15dp"
+		android:background="@color/colorPrimary"
+		android:elevation="2dp"
+		android:textColor="@color/colorWhite"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<EditText
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:inputType="text"
+			android:padding="15dp"
+			android:singleLine="true"
+			android:background="@null"
+			android:gravity="left|center"
+			android:hint="请设置自定义包名"
+			android:id="@+id/dialogpackgaeEditText1"
+			android:layout_weight="1.0"/>
+
+	</LinearLayout>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:baselineAligned="false">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="选择版本"
+				android:id="@+id/dialogpackgaeButton1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_weight="1.0"
+			android:gravity="right|center">
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="确定"
+				android:id="@+id/dialogpackgaeButton2"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="取消"
+				android:id="@+id/dialogpackgaeButton3"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

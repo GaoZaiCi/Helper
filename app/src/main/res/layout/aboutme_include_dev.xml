@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="10dp"
+	android:background="#FFDDD4D4"
+	android:elevation="5dp"
+	android:orientation="vertical">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="15dp"
+		android:text="开发人员"
+		android:textAppearance="?android:attr/textAppearanceMedium" />
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal">
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="dev."
+				android:textAllCaps="false" />
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="jn1221"
+				android:textAllCaps="false"
+				android:visibility="gone" />
+
+			<Button
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:gravity="center"
+				android:text="MiCronedx"
+				android:textAllCaps="false" />
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
+	<Button
+		android:id="@+id/AboutDevPeoPle"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="申请加入" />
+
+</LinearLayout>
+

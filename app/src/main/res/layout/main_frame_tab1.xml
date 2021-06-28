@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/main_tab1_nestedview">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FF8D6E63"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/mainframetab1ButtonGameLobby"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:text="游戏大厅"
+                    android:textColor="@color/colorWhite" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:text="存档管理"
+                    android:layout_weight="1.0"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/main_frame_tab1_archive" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:text="插件中心"
+                    android:layout_weight="1.0"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/main_frame_tab1_mod_mall" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    style="?android:attr/buttonBarButtonStyle"
+                    android:layout_height="wrap_content"
+                    android:text="种子中心"
+                    android:layout_weight="1.0"
+                    android:textColor="@color/colorWhite"
+                    android:id="@+id/mainframetab1ButtonSeeds" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_tab1_main_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.lany.banner.BannerView
+                    android:id="@+id/banner_view"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="10dp"
+                    android:elevation="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="170dp"/>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/main_tab1_cardview_app_tip"
+                    app:cardBackgroundColor="@color/colorItemx"
+                    app:cardUseCompatPadding="true"
+                    android:layout_margin="7dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="使用提示"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <TextView
+                            android:id="@+id/main_tab1_tips"
+                            style="@style/Widget.AppCompat.TextView"
+                            android:padding="10dp"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:text="滑动可以隐藏启动按钮~"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/main_tab1_cardview_notification"
+                    app:cardBackgroundColor="@color/colorItemx"
+                    app:cardUseCompatPadding="true"
+                    android:layout_margin="7dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:layout_margin="10dp"
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/main_tab1_notification_tip"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <TextView
+                            android:id="@+id/main_tab1_notification_message"
+                            style="@style/Widget.AppCompat.TextView"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/main_tab1_notification_tip"
+                            android:padding="10dp"
+                            android:maxLines="2"
+                            android:singleLine="false"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+
+                        <Button
+                            android:id="@+id/main_tab1_notification_button"
+                            style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/main_tab1_notification_message"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentBottom="true" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/main_tab1_cardview_quick_setup"
+                    app:cardBackgroundColor="@color/colorItemx"
+                    app:cardUseCompatPadding="true"
+                    android:layout_margin="7dp"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="快捷设置"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/main_tab1_duowan_id_text"
+                                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:textColor="@android:color/tertiary_text_light" />
+
+                            <Button
+                                android:id="@+id/main_tab1_duowan_id"
+                                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="start|center"
+                                android:layout_alignParentStart="true"
+                                android:text="设置多玩ID" />
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/main_tab1_game_version_text"
+                                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:layout_alignParentBottom="true"
+                                android:layout_marginBottom="0dp"
+                                android:textColor="@android:color/tertiary_text_light" />
+
+                            <Button
+                                android:id="@+id/main_tab1_game_version"
+                                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center"
+                                android:text="设置启动版本" />
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/main_tab1_start_mode_text"
+                                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentEnd="true"
+                                android:textColor="@android:color/tertiary_text_light" />
+
+                            <Button
+                                android:id="@+id/main_tab1_start_mode"
+                                style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:gravity="left|center"
+                                android:text="设置启动模式" />
+
+
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/main_tab1_cardview_fast_setup"
+                    app:cardBackgroundColor="@color/colorItemx"
+                    app:cardUseCompatPadding="true"
+                    android:layout_margin="7dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_margin="10dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:text="快捷选项"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+                        <Switch
+                            android:id="@+id/main_tab1_debug_switch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:elevation="2dp"
+                            android:text="开发调试模式"
+                            android:textColor="@color/colorAccent"
+                            android:typeface="serif" />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="加载安全模式"
+                            android:typeface="serif"
+                            android:textColor="@color/colorAccent"
+                            android:elevation="2dp"
+                            android:id="@+id/main_tab1_safe_switch" />
+
+                        <Switch
+                            android:id="@+id/main_tab1_dwfloat_switch"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="多人游戏浮窗"
+                            android:typeface="serif"
+                            android:textColor="@color/colorAccent"
+                            android:elevation="2dp" />
+
+                        <Switch
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="游戏辅助浮窗"
+                            android:typeface="serif"
+                            android:textColor="@color/colorAccent"
+                            android:elevation="2dp"
+                            android:id="@+id/main_tab1_gamefloat_switch" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/main_tab1_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:backgroundTint="@color/colorNull"
+        app:fabSize="auto"
+        app:elevation="0dp"
+        app:layout_behavior="com.fmp.helper.MyBehavior"
+        app:maxImageSize="60dp"
+        android:src="@drawable/main_start_btn" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+

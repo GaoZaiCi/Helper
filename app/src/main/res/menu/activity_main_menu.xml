@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--<item
+        android:visible="false"
+        android:id="@+id/menu_signin"
+        android:title="用户签到" />-->
+    <item
+        android:id="@+id/menu_help"
+        android:title="软件帮助" />
+    <item
+        android:id="@+id/menu_checkUpdate"
+        android:title="检查更新" />
+    <item
+        android:id="@+id/menu_checkMessage"
+        android:title="获取公告" />
+
+</menu>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/app_activity_toolbar" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/skin_nestedview"
+            android:background="@color/app_default_background"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/skin_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <RelativeLayout
+            android:id="@+id/not_item_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:text="当前没有皮肤哦~"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+        </RelativeLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <RelativeLayout
+        android:id="@+id/skin_all_fab"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#80000000"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/skin_selector_image"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginBottom="100dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_toLeftOf="@+id/skin_selector_image_fab"
+                android:paddingRight="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="导入皮肤图片"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:paddingBottom="5dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/skin_selector_image_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:src="@drawable/add"
+                app:fabSize="mini" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/skin_selector_pack"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_above="@+id/skin_selector_image">
+
+            <TextView
+                android:paddingRight="10dp"
+                android:layout_toLeftOf="@+id/skin_selector_pack_fab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="导入皮肤包"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:paddingBottom="5dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/skin_selector_pack_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:src="@drawable/add"
+                app:fabSize="mini" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:visibility="gone"
+            android:id="@+id/skin_selector_mcbox"
+            android:layout_marginRight="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp"
+            android:layout_above="@+id/skin_selector_pack">
+
+            <TextView
+                android:paddingRight="10dp"
+                android:layout_toLeftOf="@+id/skin_selector_mcbox_fab"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="导入盒子4D"
+                android:textSize="15sp"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:paddingBottom="5dp" />
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/skin_selector_mcbox_fab"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:src="@drawable/add"
+                app:fabSize="mini" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/skin_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        app:elevation="5dp"
+        app:layout_behavior="com.fmp.helper.MyBehavior"
+        app:fabSize="auto"
+        app:srcCompat="@drawable/add" />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

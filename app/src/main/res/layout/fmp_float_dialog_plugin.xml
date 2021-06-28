@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fmp.view.RoundAngleFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:elevation="2dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:background="#FFFEFEFE"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="10dp"
+                android:layout_margin="7dp"
+                android:tag="dialog_lock" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#A8C39C99"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="管理游戏插件"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#0479E5" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_marginEnd="10dp"
+                android:layout_margin="7dp"
+                android:tag="dialog_exit" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:tag="plugin_no_item"
+                android:text="还木有加载完成的插件"
+                android:visibility="gone"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+            <ListView
+                android:tag="plugin_list"
+                android:layout_width="match_parent"
+                android:layout_height="180dp" />
+
+        </RelativeLayout>
+
+
+
+    </LinearLayout>
+
+
+</com.fmp.view.RoundAngleFrameLayout>
+

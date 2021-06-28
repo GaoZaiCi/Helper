@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:gravity="center">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:background="@color/app_default_background">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:text="详细信息"
+			android:textAppearance="?android:attr/textAppearanceSmall"
+			android:padding="15dp"
+			android:background="@color/colorPrimary"
+			android:elevation="2dp"
+			android:textColor="@color/colorWhite"/>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="文件名称"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="名称"
+				android:layout_weight="1.0"
+				android:padding="10dp"
+				android:singleLine="true"
+				android:id="@+id/mod_file_details_name"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="文件大小"
+				android:padding="10dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="大小"
+				android:padding="10dp"
+				android:layout_weight="1.0"
+				android:singleLine="true"
+				android:id="@+id/mod_file_details_size"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="文件位置"
+				android:padding="10dp"/>
+
+			<HorizontalScrollView
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:paddingRight="10dp">
+
+				<TextView
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="位置"
+					android:padding="10dp"
+					android:singleLine="true"
+					android:id="@+id/mod_file_details_path"/>
+
+			</HorizontalScrollView>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:gravity="right|center">
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="删除"
+				android:id="@+id/mod_file_details_delete"/>
+
+			<Button
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="返回"
+				android:id="@+id/mod_file_details_back"/>
+
+		</LinearLayout>
+
+	</LinearLayout>
+
+</LinearLayout>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+	android:layout_height="wrap_content"
+	android:orientation="vertical"
+	android:gravity="center"
+	android:background="@color/colorWhite"
+	android:elevation="2dp"
+	android:radius="3dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="设置多玩ID"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:padding="15dp"
+		android:background="@color/colorPrimary"
+		android:elevation="2dp"
+		android:textColor="@color/colorWhite"/>
+
+	<EditText
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:inputType="number"
+		android:padding="15dp"
+		android:singleLine="true"
+		android:layout_weight="1.0"
+		android:background="@null"
+		android:gravity="left|center"
+		android:hint="请输入多玩ID"
+		android:id="@+id/dialogsetdwidEditText1"/>
+
+	<View
+		android:background="?android:attr/dividerVertical"
+		android:layout_width="match_parent"
+		android:layout_height="1dp"/>
+
+	<LinearLayout
+		android:orientation="horizontal"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content">
+
+		<Button
+			android:layout_width="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:text="取消"
+			android:layout_weight="1.0"
+			android:id="@+id/dialogsetdwidButton1"/>
+
+		<Button
+			android:layout_width="wrap_content"
+			style="?android:attr/buttonBarButtonStyle"
+			android:layout_height="wrap_content"
+			android:text="确定"
+			android:layout_weight="1.0"
+			android:id="@+id/dialogsetdwidButton2"/>
+
+	</LinearLayout>
+
+</LinearLayout>
+

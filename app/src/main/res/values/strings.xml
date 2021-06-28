@@ -1,0 +1,182 @@
+<resources>
+    <string name="app_name">FMP Helper</string>
+    <string name="launch_name">FMP助手</string>
+
+    <string name="activity_label_mod_script">游戏插件</string>
+    <string name="activity_label_mod_pkg">ModPkg模组</string>
+    <string name="activity_label_game_lobby">游戏大厅</string>
+    <string name="activity_label_archive">存档管理</string>
+    <string name="activity_label_mod_mall">插件商城</string>
+    <string name="activity_label_seeds">种子中心</string>
+    <string name="activity_label_old_mod">旧版Mod目录</string>
+    <string name="activity_label_notification">消息通知</string>
+    <string name="activity_label_setting">设置</string>
+    <string name="activity_label_about">关于</string>
+    <string name="activity_label_skin">皮肤管理</string>
+    <string name="activity_label_texture">材质光影</string>
+    <string name="activity_label_user_info">用户信息</string>
+    <string name="activity_label_login">用户登录</string>
+    <string name="activity_label_me_info">个人信息</string>
+    <string name="activity_label_plugin">插件管理</string>
+
+
+    <string name="activity_help">帮助</string>
+    <string name="mod_loader">网易我的世界Mod加载</string>
+    <string name="import_mod">导入到Helper</string>
+    <string name="navigation_drawer_open">展开侧滑栏</string>
+    <string name="navigation_drawer_close">关闭侧滑栏</string>
+    <string name="nav_header_title">Helper</string>
+    <string name="nav_header_subtitle">FMP</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_about">关于</string>
+    <string name="action_settings">设置</string>
+    <string name="open">打开</string>
+    <string name="close">关闭</string>
+    <string name="listview_header_hint_normal">继续下拉刷新</string>
+    <string name="listview_header_hint_ready">松开刷新数据</string>
+    <string name="listview_header_hint_loading">正在加载...</string>
+    <string name="listview_footer_hint_normal">查看更多</string>
+    <string name="listview_footer_hint_ready">松开载入更多</string>
+
+    <string name="main_footer_tab1">首页</string>
+    <string name="main_footer_tab2">资源</string>
+    <string name="main_footer_tab3">通知</string>
+    <string name="main_footer_tab4">我的</string>
+
+    <string name="receiver_description">FMP辅助服务</string>
+    <string name="xposed_function">Xposed辅助功能</string>
+    <string name="accessibility_tip">FMP助手-QQ回赞</string>
+    <string name="accessibility_desc">开启本功能可以在QQ的回赞界面自动回赞，不用一个个手点啦~</string>
+
+    <string name="shortcut_open_short_label">快速启动</string>
+    <string name="shortcut_open_long_label">快速启动到主界面</string>
+    <string name="shortcut_open_disabled_message">不可使用</string>
+
+    <string name="shortcut_zan_short_label">自动点赞</string>
+    <string name="shortcut_zan_long_label">启动QQ自动点赞</string>
+    <string name="shortcut_zan_disabled_message">不可使用</string>
+
+    <string name="shortcut_uninstall_short_label">QAQ</string>
+    <string name="shortcut_uninstall_long_label">不要卸载嘛</string>
+    <string name="shortcut_uninstall_disabled_message">不可卸载</string>
+
+    <string name="helper_user_remove_account_success">注销账户成功</string>
+    <string name="helper_user_remove_account_failed">注销账户失败</string>
+    <string name="helper_user_ban_title">您的账号已被停止使用</string>
+    <string name="helper_user_ban_message">%s%s解封日期:%s</string>
+    <string name="helper_user_ban_request_mali">申请解除</string>
+    <string name="helper_user_ban_ok">知道了</string>
+    <string name="helper_user_ban_request_mali_message">发送申请邮件到helper@gaozaici.cn</string>
+    <string name="helper_user_protocol_title">用户使用协议</string>
+    <string name="helper_user_protocol_no">不同意</string>
+    <string name="helper_user_protocol_yes">同意</string>
+
+    <string name="helper_launch_count_tip">请不要刷启动次数！</string>
+    <string name="helper_welcome_msg">欢迎%s%s登录，您是%s，您已经启动%d次啦~%s</string>
+    <string name="helper_loading_tip">正在验证信息中…</string>
+
+    <string name="helper_user_login_title">提示</string>
+    <string name="helper_user_login_message">如果您不登录将会以游客模式游玩此应用，也无法使用此应用的功能</string>
+    <string name="helper_user_login_next">继续登录</string>
+    <string name="helper_user_login_close">放弃登录</string>
+    <string name="helper_user_login_init_failed">无法进行QQ登录，初始化失败</string>
+    <string name="helper_user_login_not_available">抱歉，当前不可用QQ登录</string>
+    <string name="helper_user_logout_tip">退出登录成功</string>
+
+    <string name="helper_user_multi_choose">请选择一个用户登陆</string>
+
+    <string name="helper_user_create_guest_name">游客</string>
+    <string name="helper_user_create_guest_success">初始化成功</string>
+    <string name="helper_user_create_guest_failed">初始化失败</string>
+
+    <string name="helper_user_login_not_found">登录失败，似乎没有您的授权</string>
+    <string name="helper_user_login_not_authorization">登录失败，您似乎并没有被授权</string>
+    <string name="helper_user_login_cannot_guest">登录失败，您不可以登录游客账号</string>
+    <string name="helper_user_login_failed_not_data">登录失败，无返回数据</string>
+    <string name="helper_user_login_failed_null_data">登录失败，空数据</string>
+    <string name="helper_user_login_error">登录发生异常</string>
+    <string name="helper_user_login_get_info_failed">获取用户信息失败</string>
+    <string name="helper_user_login_failed_id_empty">登录状态检查失败，请重新登录</string>
+    <string name="helper_user_login_unauthorized">您未被授权QQ登录</string>
+    <string name="helper_user_login_failed_multi_data">登录数据异常</string>
+
+    <string name="helper_user_create_qq_name">QQ授权用户</string>
+
+    <string name="helper_user_qq_login_success">QQ登录成功</string>
+    <string name="helper_user_qq_login_cancel">取消获取信息</string>
+    <string name="helper_user_qq_login_get_info_failed">登录失败，获取用户信息失败</string>
+    <string name="helper_user_qq_login_cancel_tip">已取消登录</string>
+    <string name="helper_user_qq_login_error">登录失败</string>
+
+    <string name="launcher_read_error">读取错误</string>
+    <string name="launcher_version_custom">自定义版本</string>
+    <string name="launcher_version_uninstalled">未安装</string>
+    <string name="launcher_custom_empty">您没有输入包名</string>
+    <string name="launcher_custom_not_support_mc">本软件不支持国际版Minecraft哦</string>
+    <string name="launcher_custom_uninstall">此应用未安装，请检查您输入的包名</string>
+    <string name="launcher_version_custom_save">保存成功</string>
+    <string name="launcher_custom_package">自定义启动包名</string>
+    <string name="launcher_custom_package_tip">请输入包名………</string>
+    <string name="launcher_custom_save">保存</string>
+    <string name="launcher_custom_package_empty">您没有输入包名</string>
+    <string name="launcher_set_package">成功设置为%s</string>
+    <string name="launcher_goto_netease">去官网下载</string>
+    <string name="launcher_start_failed_uninstall">启动失败，网易我的世界未安装</string>
+    <string name="launcher_download">下载</string>
+    <string name="launcher_start_failed_not_package">启动失败，未设置启动包名</string>
+    <string name="launcher_goto_settings">去设置</string>
+    <string name="launcher_start_game_failed">启动游戏失败:%s</string>
+
+    <string name="launcher_netease_mc_not_found">您当前未安装“我的世界”</string>
+    <string name="launcher_netease_mc_one">您当前安装了一个版本的“我的世界”</string>
+    <string name="launcher_netease_mc_multi">您当前安装了多个版本的“我的世界”</string>
+
+    <string name="launcher_start_check_version_tip">请检查“我的世界”版本是否安装正确</string>
+    <string name="launcher_start_check_version">游戏版本：%s</string>
+    <string name="launcher_start_check_version_not_modify">(未修改)</string>
+    <string name="launcher_start_check_version_modify">(修改版)</string>
+    <string name="launcher_start_check_version_null_modify">(未知版本)</string>
+    <string name="launcher_start_check_plugin_version">插件版本：%s(%d)</string>
+    <string name="launcher_start_check_plugin_version_tip">请检查您的APK插件!</string>
+    <string name="launcher_start_check_duowan_version">多玩版本：%s(%d)</string>
+    <string name="launcher_start_check_duowan_version_tip">修改版可能无法正常使用!</string>
+    <string name="launcher_start_check_duowan_version_update">请更新您的多玩!</string>
+    <string name="launcher_start_check_version_uninstalled">未安装</string>
+    <string name="launcher_start_check_version_installed">已安装</string>
+    <string name="launcher_start_check_core">核心状态：</string>
+    <string name="launcher_start_failed">启动我的世界失败</string>
+
+    <string name="launcher_download_netease_mc">下载我的世界</string>
+    <string name="launcher_dwonload_duowan">下载多玩盒子</string>
+    <string name="launcher_ok">知道了</string>
+
+    <string name="launcher_start_error_tip">请检查您的“我的世界”和“多玩我的世界盒子”的版本%s您还可以尝试清除缓存</string>
+    <string name="launcher_start_error_tip_2">崩溃插件：%s%s%s建议您取消加载这个插件以防止崩溃%s主界面的错误日志会记录插件运行发生的错误</string>
+    <string name="launcher_start_error_title">游戏加载过程中发生崩溃</string>
+    <string name="launcher_start_error_remove_cache">清除缓存</string>
+    <string name="launcher_start_error_remove_cache_success">清除缓存成功</string>
+    <string name="launcher_start_check_uninstall_duowan">多玩我的世界盒子未安装</string>
+    <string name="launcher_start_check_download_duowan">点击下载</string>
+    <string name="launcher_start_check_core_so_not_flond">核心文件缺失</string>
+    <string name="launcher_start_check_core_plugin_not_flond">核心插件缺失</string>
+    <string name="launcher_start_check_core_so_install">点击安装</string>
+    <string name="launcher_start_check_install_plugin">安装插件</string>
+    <string name="launcher_start_check_install_plugin_success">成功</string>
+    <string name="launcher_start_check_install_plugin_failed">失败</string>
+    <string name="launcher_not_duowan_id">未设置</string>
+    <string name="launcher_duowan_id_empty">已设置为空</string>
+    <string name="launcher_duowan_id_set_to">已设置为：%s</string>
+
+    <string name="launcher_package_name_1">官方版</string>
+    <string name="launcher_package_name_2">渠道版:4399</string>
+    <string name="launcher_package_name_3">渠道版:华为</string>
+    <string name="launcher_package_name_4">渠道版:应用宝</string>
+    <string name="launcher_package_name_5">渠道版:百度</string>
+    <string name="launcher_package_name_6">渠道版:小米</string>
+    <string name="launcher_package_name_7">渠道版:九游</string>
+    <string name="launcher_package_name_8">渠道版:OPPO</string>
+    <string name="launcher_package_name_9">渠道版:VIVO</string>
+    <string name="launcher_package_name_10">渠道版:B站</string>
+
+
+</resources>

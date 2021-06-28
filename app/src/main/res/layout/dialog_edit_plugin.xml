@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    app:cardBackgroundColor="#ffffff"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="0dp"
+    app:cardUseCompatPadding="false">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:textColor="#232323"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.fmp.view.CircleImageView
+                android:id="@+id/plugin_edit_icon"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/emp_logo" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/plugin_edit_upload"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingTop="10dp"
+                android:paddingRight="20dp"
+                android:paddingBottom="10dp"
+                fancy:fb_defaultColor="#EC407A"
+                fancy:fb_focusColor="#9bd823"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="35dp"
+                fancy:fb_textColor="#FFFFFF" />
+
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/plugin_edit_name_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="20"
+            app:errorEnabled="true"
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plugin_edit_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="插件名称"
+                android:textColor="#232323"
+                android:textSize="17sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/plugin_edit_code_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            app:errorEnabled="true"
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plugin_edit_code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="插件版本号"
+                android:textColor="#232323"
+                android:textSize="17sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/plugin_edit_info_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="100"
+            app:errorEnabled="true"
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plugin_edit_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="插件介绍"
+                android:textColor="#232323"
+                android:textSize="17sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/plugin_edit_group_key_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterEnabled="true"
+            app:counterMaxLength="35"
+            app:errorEnabled="true"
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="5dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/plugin_edit_group_key"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="插件群Key"
+                android:textColor="#232323"
+                android:textSize="17sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:paddingStart="3dp"
+            android:paddingTop="5dp"
+            android:paddingEnd="3dp"
+            android:paddingBottom="5dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/plugin_edit_type_tip"
+                android:layout_marginStart="3dp"
+                android:gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+            <RadioGroup
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/plugin_edit_type_0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/plugin_edit_type_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/plugin_edit_type_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:id="@+id/plugin_edit_type_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#f3f3f3"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:id="@+id/fl_dialog_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_dialog_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:src="@null" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#232323"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+            <View
+                android:id="@+id/view_line"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="#f3f3f3" />
+
+            <FrameLayout
+                android:id="@+id/fl_dialog_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="?android:attr/selectableItemBackground"
+                android:clickable="true"
+                android:focusable="true">
+
+                <ImageView
+                    android:id="@+id/iv_dialog_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:padding="16dp"
+                    android:src="@null" />
+
+                <TextView
+                    android:id="@+id/tv_dialog_yes"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:textColor="#232323"
+                    android:textSize="16sp" />
+
+            </FrameLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

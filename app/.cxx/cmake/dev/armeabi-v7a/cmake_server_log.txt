@@ -1,0 +1,143 @@
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"supportedProtocolVersions":[{"isExperimental":true,"major":1,"minor":1}],"type":"hello"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "handshake",
+  "cookie": "gradle-cmake-cookie",
+  "protocolVersion": {
+    "isExperimental": true,
+    "major": 1,
+    "minor": 1
+  },
+  "sourceDirectory": "D:/Android/Helper/app",
+  "buildDirectory": "D:/Android/Helper/app/.cxx/cmake/dev/armeabi-v7a",
+  "generator": "Ninja"
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"gradle-cmake-cookie","inReplyTo":"handshake","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {
+  "type": "configure",
+  "cacheArguments": [
+    "",
+    "-DANDROID_ABI\u003darmeabi-v7a",
+    "-DANDROID_PLATFORM\u003dandroid-21",
+    "-DCMAKE_LIBRARY_OUTPUT_DIRECTORY\u003dD:\\Android\\Helper\\app\\build\\intermediates\\cmake\\dev\\obj\\armeabi-v7a",
+    "-DCMAKE_BUILD_TYPE\u003dRelease",
+    "-DANDROID_NDK\u003dD:\\Android\\SDK\\ndk\\18.1.5063045",
+    "-DCMAKE_CXX_FLAGS\u003d-mllvm -sub_loop\u003d5 -mllvm -bcf_loop\u003d5 -mllvm -fla -mllvm -split_num\u003d5 -mllvm -sobf",
+    "-DCMAKE_SYSTEM_NAME\u003dAndroid",
+    "-DCMAKE_ANDROID_ARCH_ABI\u003darmeabi-v7a",
+    "-DCMAKE_SYSTEM_VERSION\u003d21",
+    "-DCMAKE_EXPORT_COMPILE_COMMANDS\u003dON",
+    "-DCMAKE_ANDROID_NDK\u003dD:\\Android\\SDK\\ndk\\18.1.5063045",
+    "-DCMAKE_TOOLCHAIN_FILE\u003dD:\\Android\\SDK\\ndk\\18.1.5063045\\build\\cmake\\android.toolchain.cmake",
+    "-G Ninja",
+    "-DCMAKE_MAKE_PROGRAM\u003dD:\\Android\\SDK\\cmake\\3.10.2.4988404\\bin\\ninja.exe"
+  ]
+}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Configuring","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","message":"Configuring done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Configuring done
+CMAKE SERVER: Configuring done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"configure","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"compute"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","progressCurrent":1000,"progressMaximum":1000,"progressMessage":"Generating","progressMinimum":0,"type":"progress"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","message":"Generating done","type":"message"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: Generating done
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"cookie":"","inReplyTo":"compute","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"cmakeInputs"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"buildFiles":[{"isCMake":true,"isTemporary":false,"sources":["../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInitialize.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Initialize.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeSystemSpecificInformation.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeGenericSystem.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Linux.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/UnixPaths.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCInformation.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-C.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/GNU.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/CMakeCommonCompilerMacros.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-C.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCXXInformation.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeLanguageInformation.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang-CXX.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Compiler/Clang.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang-CXX.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/Platform/Android-Clang.cmake","../../SDK/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeCommonLanguageInclude.cmake"]},{"isCMake":false,"isTemporary":false,"sources":["CMakeLists.txt","../../SDK/ndk/18.1.5063045/build/cmake/android.toolchain.cmake"]},{"isCMake":false,"isTemporary":true,"sources":[".cxx/cmake/dev/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake",".cxx/cmake/dev/armeabi-v7a/CMakeFiles/3.10.2/CMakeCCompiler.cmake",".cxx/cmake/dev/armeabi-v7a/CMakeFiles/3.10.2/CMakeCXXCompiler.cmake"]}],"cmakeRootDirectory":"D:/Android/SDK/cmake/3.10.2.4988404/share/cmake-3.10","cookie":"","inReplyTo":"cmakeInputs","sourceDirectory":"D:/Android/Helper/app","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"type":"codemodel"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+
+CMAKE SERVER: 
+
+CMAKE SERVER: [== "CMake Server" ==[
+
+CMAKE SERVER: {"configurations":[{"name":"Release","projects":[{"buildDirectory":"D:/Android/Helper/app/.cxx/cmake/dev/armeabi-v7a","name":"Project","sourceDirectory":"D:/Android/Helper/app","targets":[{"artifacts":["D:/Android/Helper/app/libs/armeabi-v7a/libfmp-jni.so"],"buildDirectory":"D:/Android/Helper/app/.cxx/cmake/dev/armeabi-v7a","fileGroups":[{"compileFlags":"-isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC  ","defines":["fmp_jni_EXPORTS"],"includePath":[{"isSystem":true,"path":"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include"},{"isSystem":true,"path":"D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include"},{"isSystem":true,"path":"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include"}],"isGenerated":false,"language":"CXX","sources":["src/main/jni/fmp-jni.cpp","src/main/jni/FileUtil.cpp","src/main/jni/Base64.cpp"]}],"fullName":"libfmp-jni.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot D:/Android/SDK/ndk/18.1.5063045/platforms/android-21/arch-arm -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--fix-cortex-a8 -Wl,--exclude-libs,libunwind.a -LD:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now","linkLibraries":"-llog -latomic -lm \"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libc++_static.a\" \"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libc++abi.a\" \"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libunwind.a\" \"-ldl\"","linkerLanguage":"CXX","name":"fmp-jni","sourceDirectory":"D:/Android/Helper/app","sysroot":"D:/Android/SDK/ndk/18.1.5063045/sysroot","type":"SHARED_LIBRARY"},{"artifacts":["D:/Android/Helper/app/libs/armeabi-v7a/libduowan-support.so"],"buildDirectory":"D:/Android/Helper/app/.cxx/cmake/dev/armeabi-v7a","fileGroups":[{"compileFlags":"-isystem D:/Android/SDK/ndk/18.1.5063045/sysroot/usr/include/arm-linux-androideabi -D__ANDROID_API__=21 -g -DANDROID -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -march=armv7-a -mfloat-abi=softfp -mfpu=vfpv3-d16 -mthumb -Wa,--noexecstack -Wformat -Werror=format-security -std=c++11 -mllvm -sub_loop=5 -mllvm -bcf_loop=5 -mllvm -fla -mllvm -split_num=5 -mllvm -sobf -Os -DNDEBUG  -fPIC  ","defines":["duowan_support_EXPORTS"],"includePath":[{"isSystem":true,"path":"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/include"},{"isSystem":true,"path":"D:/Android/SDK/ndk/18.1.5063045/sources/android/support/include"},{"isSystem":true,"path":"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++abi/include"}],"isGenerated":false,"language":"CXX","sources":["src/main/jni/duowan/duowan-support.cpp"]}],"fullName":"libduowan-support.so","linkFlags":"-Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libatomic.a -nostdlib++ --sysroot D:/Android/SDK/ndk/18.1.5063045/platforms/android-21/arch-arm -Wl,--build-id -Wl,--warn-shared-textrel -Wl,--fatal-warnings -Wl,--fix-cortex-a8 -Wl,--exclude-libs,libunwind.a -LD:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a -Wl,--no-undefined -Wl,-z,noexecstack -Qunused-arguments -Wl,-z,relro -Wl,-z,now","linkLibraries":"-llog -latomic -lm \"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libc++_static.a\" \"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libc++abi.a\" \"D:/Android/SDK/ndk/18.1.5063045/sources/cxx-stl/llvm-libc++/libs/armeabi-v7a/libunwind.a\" \"-ldl\"","linkerLanguage":"CXX","name":"duowan-support","sourceDirectory":"D:/Android/Helper/app","sysroot":"D:/Android/SDK/ndk/18.1.5063045/sysroot","type":"SHARED_LIBRARY"}]}]}],"cookie":"","inReplyTo":"codemodel","type":"reply"}
+
+CMAKE SERVER: ]== "CMake Server" ==]
+

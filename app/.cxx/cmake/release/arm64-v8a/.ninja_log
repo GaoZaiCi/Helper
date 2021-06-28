@@ -1,0 +1,7 @@
+# ninja log v5
+30	1498	622316846	CMakeFiles/fmp-jni.dir/src/main/jni/Base64.cpp.o	4b923b3a23f978b1
+15	1546	622316846	CMakeFiles/fmp-jni.dir/src/main/jni/FileUtil.cpp.o	b2930f9251a48a74
+68	1590	622316846	CMakeFiles/duowan-support.dir/src/main/jni/duowan/duowan-support.cpp.o	3b90e56404d98e41
+1590	1920	622316846	../../../../libs/arm64-v8a/libduowan-support.so	13fee9ad5d044fdf
+1	2743	622316847	CMakeFiles/fmp-jni.dir/src/main/jni/fmp-jni.cpp.o	dcc3453de1e871e9
+2745	3183	622316848	../../../../libs/arm64-v8a/libfmp-jni.so	c76bd60c47bbd760

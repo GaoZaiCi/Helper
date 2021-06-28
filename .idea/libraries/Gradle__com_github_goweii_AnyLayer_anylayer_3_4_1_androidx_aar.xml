@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Gradle: com.github.goweii.AnyLayer:anylayer:3.4.1-androidx@aar">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5994aea673090e2f8aefef08bfbb6929/anylayer-3.4.1-androidx/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5994aea673090e2f8aefef08bfbb6929/anylayer-3.4.1-androidx/res" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/5994aea673090e2f8aefef08bfbb6929/anylayer-3.4.1-androidx/AndroidManifest.xml" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.goweii.AnyLayer/anylayer/3.4.1-androidx/5c7ecefb267996f1bf19d59693deca4dab0cadfd/anylayer-3.4.1-androidx-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

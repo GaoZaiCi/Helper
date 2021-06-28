@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_margin="10dp"
+	android:background="#FFDDD4D4"
+	android:elevation="5dp">
+
+	<TextView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:text="官方人员"
+		android:textAppearance="?android:attr/textAppearanceMedium"
+		android:padding="15dp" />
+
+	<HorizontalScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="5dp">
+
+		<LinearLayout
+			android:orientation="horizontal"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content">
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="dev."
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="萌主"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="喜羊羊"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="夏子轩"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="jn1221"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="浪子"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="赤龙"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="溪云"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="易少"
+				android:gravity="center" />
+
+			<Button
+				android:textAllCaps="false"
+				android:layout_width="wrap_content"
+				style="?android:attr/buttonBarButtonStyle"
+				android:layout_height="wrap_content"
+				android:text="MiCronedx"
+				android:gravity="center" />
+
+		</LinearLayout>
+
+	</HorizontalScrollView>
+
+	<Button
+		android:layout_width="match_parent"
+		style="?android:attr/buttonBarButtonStyle"
+		android:layout_height="wrap_content"
+		android:text="查看更多"
+		android:id="@+id/AboutPeoPle" />
+
+</LinearLayout>
+

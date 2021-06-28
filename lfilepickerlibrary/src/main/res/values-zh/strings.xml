@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="lfile_OpenDir">选择目录</string>
+    <string name="lfile_EndDir">不能再返回啦</string>
+</resources>

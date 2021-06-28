@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/app_default_background"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_alert_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerInParent="false"
+        android:background="@color/colorPrimary"
+        android:elevation="2dp"
+        android:padding="20dp"
+        android:text="Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorWhite" />
+
+    <com.fmp.view.SmartScrollView
+        android:id="@+id/sv_alert_view"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/tv_alert_title"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+
+        <LinearLayout
+            android:id="@+id/tv_alert_message_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/tv_alert_message"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Message"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+                android:textIsSelectable="true" />
+
+        </LinearLayout>
+
+
+    </com.fmp.view.SmartScrollView>
+
+    <Button
+        android:id="@+id/btn_alert_button1"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv_alert_view"
+        android:layout_marginStart="20dp"
+        android:text="Button1" />
+
+    <Button
+        android:id="@+id/btn_alert_button2"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_below="@id/sv_alert_view"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_alignParentBottom="false"
+        android:layout_centerInParent="false"
+        android:layout_centerVertical="false"
+        android:layout_toLeftOf="@id/btn_alert_button3"
+        android:text="Button2" />
+
+    <Button
+        android:id="@+id/btn_alert_button3"
+        style="@style/Widget.AppCompat.Button.ButtonBar.AlertDialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sv_alert_view"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="20dp"
+        android:text="Button3" />
+
+
+</RelativeLayout>

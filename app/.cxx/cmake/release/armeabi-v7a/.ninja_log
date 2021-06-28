@@ -1,0 +1,13 @@
+# ninja log v5
+14	471	613646652	CMakeFiles/fmp-jni.dir/src/main/jni/Base64.cpp.o	13612962b5fadb09
+60	514	613646652	CMakeFiles/duowan-support.dir/src/main/jni/duowan/duowan-support.cpp.o	478e9851964fa349
+44	558	613646652	CMakeFiles/fmp-jni.dir/src/main/jni/FileUtil.cpp.o	b07d85b085d038cf
+514	897	613646653	../../../../libs/armeabi-v7a/libduowan-support.so	81eb3e8e0d1b1c78
+1	1507	613646653	CMakeFiles/fmp-jni.dir/src/main/jni/fmp-jni.cpp.o	2d3150c36b39fed3
+1508	1723	613646654	../../../../libs/armeabi-v7a/libfmp-jni.so	1c9526c2bbeb613a
+22	547	622316843	CMakeFiles/fmp-jni.dir/src/main/jni/Base64.cpp.o	41e8f6ec354bcc55
+41	706	622316843	CMakeFiles/fmp-jni.dir/src/main/jni/FileUtil.cpp.o	c6cc2295f44ec588
+57	766	622316843	CMakeFiles/duowan-support.dir/src/main/jni/duowan/duowan-support.cpp.o	ba2b3d46f0052487
+767	1348	622316844	../../../../libs/armeabi-v7a/libduowan-support.so	840a45bef98bc1f9
+4	1618	622316844	CMakeFiles/fmp-jni.dir/src/main/jni/fmp-jni.cpp.o	37e1981effbd3a83
+1619	1923	622316844	../../../../libs/armeabi-v7a/libfmp-jni.so	51ab5f65f5db787f

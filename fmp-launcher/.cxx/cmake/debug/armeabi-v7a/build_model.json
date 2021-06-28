@@ -1,0 +1,76 @@
+{
+  "variant": {
+    "module": {
+      "rootBuildGradleFolder": "D:\\Android\\Helper",
+      "sdkFolder": "D:\\Android\\SDK",
+      "isNativeCompilerSettingsCacheEnabled": false,
+      "isBuildOnlyTargetAbiEnabled": true,
+      "splitsAbiFilterSet": [],
+      "intermediatesFolder": "D:\\Android\\Helper\\fmp-launcher\\build\\intermediates",
+      "gradleModulePathName": ":fmp-launcher",
+      "moduleRootFolder": "D:\\Android\\Helper\\fmp-launcher",
+      "makeFile": "D:\\Android\\Helper\\fmp-launcher\\CMakeLists.txt",
+      "buildSystem": "CMAKE",
+      "compilerSettingsCacheFolder": "D:\\Android\\Helper\\.cxx",
+      "cxxFolder": "D:\\Android\\Helper\\fmp-launcher\\.cxx",
+      "ndkFolder": "D:\\Android\\SDK\\ndk\\18.1.5063045",
+      "ndkVersion": "18.1.5063045",
+      "ndkSupportedAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "ndkDefaultAbiList": [
+        "ARMEABI_V7A",
+        "ARM64_V8A",
+        "X86",
+        "X86_64"
+      ],
+      "cmakeToolchainFile": "."
+    },
+    "buildSystemArgumentList": [
+      "-DANDROID_STL\u003dc++_shared"
+    ],
+    "cFlagList": [],
+    "cppFlagsList": [
+      "-std\u003dc++11 -frtti -fexceptions",
+      "-mllvm -sub_loop\u003d5",
+      "-mllvm -bcf_loop\u003d5",
+      "-mllvm -fla",
+      "-mllvm -split_num\u003d5",
+      "-mllvm -sobf"
+    ],
+    "variantName": "debug",
+    "soFolder": "D:\\Android\\Helper\\fmp-launcher\\build\\intermediates\\cmake\\debug\\lib",
+    "objFolder": "D:\\Android\\Helper\\fmp-launcher\\build\\intermediates\\cmake\\debug\\obj",
+    "jsonFolder": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug",
+    "gradleBuildOutputFolder": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug",
+    "isDebuggableEnabled": true,
+    "validAbiList": [
+      "ARMEABI_V7A"
+    ],
+    "buildTargetSet": []
+  },
+  "abi": "ARMEABI_V7A",
+  "abiPlatformVersion": 21,
+  "cxxBuildFolder": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug\\armeabi-v7a",
+  "jsonFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug\\armeabi-v7a\\android_gradle_build.json",
+  "gradleBuildOutputFolder": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a",
+  "objFolder": "D:\\Android\\Helper\\fmp-launcher\\build\\intermediates\\cmake\\debug\\obj\\armeabi-v7a",
+  "buildCommandFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug\\armeabi-v7a\\build_command.txt",
+  "buildOutputFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug\\armeabi-v7a\\build_output.txt",
+  "modelOutputFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug\\armeabi-v7a\\build_model.json",
+  "cmake": {
+    "cmakeListsWrapperFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a\\CMakeLists.txt",
+    "toolchainWrapperFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a\\android_gradle_build.toolchain.cmake",
+    "buildGenerationStateFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a\\build_generation_state.json",
+    "cacheKeyFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_key.json",
+    "compilerCacheUseFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_use.json",
+    "compilerCacheWriteFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_cache_write.json",
+    "toolchainSettingsFromCacheFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cxx\\debug\\armeabi-v7a\\compiler_settings_cache.cmake",
+    "cmakeWrappingBaseFolder": "."
+  },
+  "jsonGenerationLoggingRecordFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug\\armeabi-v7a\\json_generation_record.json",
+  "compileCommandsJsonFile": "D:\\Android\\Helper\\fmp-launcher\\.cxx\\cmake\\debug\\armeabi-v7a\\compile_commands.json"
+}

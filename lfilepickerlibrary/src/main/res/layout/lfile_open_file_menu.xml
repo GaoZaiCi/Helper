@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:layout_margin="5dp"
+	android:clickable="true"
+	android:focusable="true"
+	android:foreground="?attr/selectableItemBackgroundBorderless"
+	android:orientation="vertical"
+	app:cardCornerRadius="10dp">
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:orientation="vertical">
+
+		<TextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/back_bg"
+			android:elevation="2dp"
+			android:padding="15dp"
+			android:text="快捷跳转"
+			android:textColor="@color/lfile_white"/>
+
+		<TextView
+			android:id="@+id/lfile_opendir_oldqq"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/lfile_btn_bg"
+			android:padding="15dp"
+			android:text="旧QQ下载目录"
+			android:textColor="@color/lfile_white"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical"/>
+
+		<TextView
+			android:id="@+id/lfile_opendir_newqq"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/lfile_btn_bg"
+			android:padding="15dp"
+			android:text="新QQ下载目录"
+			android:textColor="@color/lfile_white"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical"/>
+
+		<TextView
+			android:id="@+id/lfile_opendir_tim"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/lfile_btn_bg"
+			android:padding="15dp"
+			android:text="TIM下载目录"
+			android:textColor="@color/lfile_white"/>
+
+		<View
+			android:layout_width="match_parent"
+			android:layout_height="1dp"
+			android:background="?android:attr/dividerVertical"/>
+
+		<TextView
+			android:id="@+id/lfile_opendir_download"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:background="@drawable/lfile_btn_bg"
+			android:padding="15dp"
+			android:text="系统下载目录"
+			android:textColor="@color/lfile_white"/>
+
+
+	</LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

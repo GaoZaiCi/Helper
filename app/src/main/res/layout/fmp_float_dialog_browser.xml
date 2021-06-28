@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fmp.view.RoundAngleFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="500dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F0F0EF"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="7dp"
+                android:layout_marginStart="10dp"
+                android:tag="dialog_lock" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#4064EA"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="浏览器"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:textColor="#F48FB1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerInParent="true"
+                android:layout_margin="7dp"
+                android:layout_marginEnd="10dp"
+                android:tag="dialog_exit" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/dividerHorizontal" />
+
+            <EditText
+                android:background="#90CAF9"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0"
+                android:ems="10"
+                android:hint="搜索.."
+                android:inputType="text"
+                android:padding="10dp"
+                android:tag="edit"
+                android:textColor="#F7EEEE"
+                android:textColorHint="#FFFFFF" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/dividerHorizontal" />
+
+            <Button
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:tag="Goon"
+                android:text="进入"
+                android:textColor="#FF5722" />
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/dividerVertical" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="horizontal">
+            
+            <WebView
+                android:layout_weight="1.0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:tag="browser" />
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="?android:attr/dividerHorizontal" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <Button
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="refresh"
+                        android:textColor="#FF5722"
+                        android:text="刷新" />
+
+                    <Button
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="next"
+                        android:textColor="#FF5722"
+                        android:text="前进" />
+
+                    <Button
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="back"
+                        android:textColor="#FF5722"
+                        android:text="后退" />
+
+                    <Button
+                        style="?android:attr/buttonBarButtonStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:tag="switch"
+                        android:textColor="#FF5722"
+                        android:text="切换" />
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</com.fmp.view.RoundAngleFrameLayout>
+
+
