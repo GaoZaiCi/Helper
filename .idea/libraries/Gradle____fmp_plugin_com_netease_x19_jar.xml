@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Gradle: ./fmp-plugin/com.netease.x19.jar">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/fmp-plugin/com.netease.x19.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
