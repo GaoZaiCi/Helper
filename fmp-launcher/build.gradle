@@ -13,14 +13,6 @@ android {
         externalNativeBuild {
             cmake {
                 cppFlags "-std=c++11 -frtti -fexceptions"
-                //混淆配置
-                cppFlags "-mllvm -sub_loop=5"//指令替换
-                cppFlags "-mllvm -bcf_loop=5"//伪控制流
-                cppFlags "-mllvm -fla"//控制流展平
-                cppFlags "-mllvm -split_num=5"//激活基本块划分
-                cppFlags "-mllvm -sobf"//字符串混淆
-                //生成多个版本的so文件
-                //因为游戏限制这个架构就只能用这个
                 abiFilters("armeabi-v7a")
                 arguments "-DANDROID_STL=c++_shared"
             }
