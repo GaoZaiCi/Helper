@@ -14,20 +14,7 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    //修改生成的apk名字
-    applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            if (variant.buildType.name == 'release') {
-                //这个修改输出的APK路径 （路径不能是盘符根目录例如F：\\，要指定一个文件夹）
-                variant.getPackageApplication().outputDirectory = new File("D:\\Android\\Helper\\app\\src\\main\\jniLibs\\armeabi-v7a")
-                variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
-                    //这个修改输出APK的文件名
-                    apkData.outputFileName = "libfmp-support.so"
-                }
-            }
-        }
-    }
-
+  
     buildTypes {
         release {
             minifyEnabled true   //开启混淆
