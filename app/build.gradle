@@ -14,12 +14,6 @@ android {
             cmake {
                 //基本配置
                 //cppFlags "-std=c++11 -frtti -fexceptions"
-                //混淆配置
-                cppFlags "-mllvm -sub_loop=5"//指令替换
-                cppFlags "-mllvm -bcf_loop=5"//伪控制流
-                cppFlags "-mllvm -fla"//控制流展平
-                cppFlags "-mllvm -split_num=5"//激活基本块划分
-                cppFlags "-mllvm -sobf"//字符串混淆
                 //生成多个版本的so文件
                 abiFilters("armeabi-v7a","arm64-v8a")
             }
@@ -37,41 +31,12 @@ android {
         abortOnError false
     }
 
-    // //修改生成的apk名字
-    applicationVariants.all { variant ->
-        variant.outputs.all { output ->
-            if (variant.buildType.name == 'release') {
-                //这个修改输出的APK路径 （路径不能是盘符根目录例如F：\\，要指定一个文件夹）
-                //variant.getPackageApplication().outputDirectory = new File("C:\\Users\\Gao在此\\Desktop\\Helper")
-                variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
-                    //这个修改输出APK的文件名
-                    apkData.outputFileName = "FMP Helper-${variant.versionCode}-${variant.versionName}-${variant.name}.apk"
-                }
-            }
-            /*if (variant.buildType.name.equals('debug')) {
-                //这个修改输出的APK路径 （路径不能是盘符根目录例如F：\\，要指定一个文件夹）
-                variant.getPackageApplication().outputDirectory = new File("C:\\Users\\Gao在此\\Desktop\\Helper")
-                variant.getPackageApplication().outputScope.apkDatas.forEach { apkData ->
-                    //这个修改输出APK的文件名
-                    apkData.outputFileName = "FMP Helper-${variant.versionCode}-${variant.versionName}-${variant.name}.apk"
-                }
-            }*/
-        }
-    }
 
     // 配置CMakeLists.txt路径
     externalNativeBuild {
         cmake {
             path "CMakeLists.txt"
             version "3.10.2"
-        }
-    }
-    signingConfigs {
-        release {
-            storeFile file("D:\\Android\\dev.jks")
-            storePassword 'gaozaici'
-            keyAlias 'dev'
-            keyPassword 'gaozaici'
         }
     }
     buildTypes {
@@ -81,19 +46,16 @@ android {
             shrinkResources true  //移出无用资源
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             multiDexEnabled = true
-            signingConfig signingConfigs.release
         }
         dev {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             multiDexEnabled = true
-            signingConfig signingConfigs.release
         }
         debug {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
             multiDexEnabled = true
-            signingConfig signingConfigs.release
         }
     }
     compileOptions {
